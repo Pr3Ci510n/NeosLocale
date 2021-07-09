@@ -29,8 +29,8 @@
         "General.Sort.Ascending" : "上升",
         "General.Sort.Descending" : "降序",
 
-        "Locomotion.Noclip.Name" : "无剪辑",
-        "Locomotion.Noclip.Description" : "简单的无剪辑飞行模式，非常适合编辑。",
+        "Locomotion.Noclip.Name" : "穿墙",
+        "Locomotion.Noclip.Description" : "简单的穿墙辑飞行模式，非常适合编辑。",
         "Locomotion.Teleport.Name" : "传送",
         "Locomotion.Teleport.Description" : "使用弹道路径传送，移动舒适。",
         "Locomotion.Fly.Name" : "飞行模式",
@@ -557,6 +557,7 @@
         "AvatarCreator.ShowToolAnchors" : "显示工具锚",
         "AvatarCreator.SetupVolumeMeter" : "设置音量计",
         "AvatarCreator.SetupEyes" : "设置眼睛",
+        "AvatarCreator.SetupFaceTracking" : "设置人脸跟踪",
         "AvatarCreator.ProtectAvatar" : "保护化身",
         "AvatarCreator.CalibrateFeet" : "校准脚",
         "AvatarCreator.CalibrateHips" : "校准骨盆/臀部",
@@ -883,6 +884,7 @@
         "Settings.LaserSmoothing.ModulateExponent" : "调整指数",
         "Settings.LaserSmoothing.ModulateSpeedMultiplier" : "调制速度倍增器",
         "Settings.LaserSmoothing.StickThreshold" : "粘阈值",
+        "Settings.Laser.ShowInDesktop" : "在桌面模式下显示激光",
         "Settings.LaserSmoothing.Reset" : "重置激光设置",
 
         "Settings.Audio.Header" : "音讯",
@@ -905,6 +907,8 @@
         "Settings.Audio.StopTest" : "停止测试",
         "Settings.Audio.Monitoring" : "音频输入监控:",
         "Settings.Audio.SystemDefaultOutput" : "使用系统默认值",
+
+        "Settings.Graphics.DesktopFOV" : "桌面视场",
 
         "Settings.Locale.ChangeLanguage" : "改变语言",
         "Settings.Locale.SelectLanguageHeader" : "选择你的语言:",

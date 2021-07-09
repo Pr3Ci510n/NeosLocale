@@ -4,6 +4,8 @@
     "messages" : 
     {
         "General.OK" : "OK",
+        "General.Start" : "Start",
+        "General.Finish" : "Dokončit",
         "General.Cancel" : "Zrušit",
         "General.Continue" : "Pokračovat",
         "General.Next" : "Další",
@@ -48,15 +50,16 @@
        
         "Interaction.Destroy" : "Odstranit",
         "Interaction.Duplicate" : "Duplikovat",
+        "Interaction.SaveToInventory" : "Uložit do inventáře",
         "Interaction.Undo" : "Zpět",
         "Interaction.Redo" : "Znovu",
         "Interaction.EquipTool" : "Nasadit",
         "Interaction.DequipTool" : "Sundat",
-        "Interaction.ScalingEnabled" : "Sebe-škálování Aktivní",
-        "Interaction.ScalingDisabled" : "Sebe-škálování Vypnuto",
-        "Interaction.ResetScale" : "Resetovat mou škálu",
-        "Interaction.LaserEnabled" : "Laser Aktivní",
-        "Interaction.LaserDisabled" : "Laser Vypnutý",
+        "Interaction.ScalingEnabled" : "Sebe-škálování: Zapnuto",
+        "Interaction.ScalingDisabled" : "Sebe-škálování: Vypnuto",
+        "Interaction.ResetScale" : "Resetovat moji škálu",
+        "Interaction.LaserEnabled" : "Laser: Zapnut",
+        "Interaction.LaserDisabled" : "Laser: Vypnut",
         "Interaction.Locomotion" : "Metoda pohybu",
         "Interaction.Locomotion.None" : "Žádná",
 
@@ -68,7 +71,7 @@
 
         "Interaction.EquipAvatar" : "Převtělit se do avatara",
 
-        "Interaction.SaveAsScreenshot" : "Uložit jako Screenshot",
+        "Interaction.SaveAsScreenshot" : "Uložit jako screenshot",
         "Interaction.ImportFile" : "Importovat Soubor",
         "Interaction.ExportFile" : "Exportovat Soubor",
         "Interaction.CopyLink" : "Kopírovat odkaz",
@@ -85,10 +88,12 @@
 
         "Dash.Actions.PasteFromClipboard" : "Vložit obsah ze schránky",
 
+        "Dash.Actions.TurnOffUIEdit" : "Vypnout režim editace UI",
+
         "Dash.Actions.CoreWorldsHeader" : "Důležité světy",
-        "Dash.Actions.ContentHub" : "Centrum Obsahu",
-        "Dash.Actions.MTC" : "Trénovací Centrum Metaversu <size=75%>(tutoriály)</size>",
-        "Dash.Actions.CloudHome" : "Můj Domov",
+        "Dash.Actions.ContentHub" : "Centrum obsahu",
+        "Dash.Actions.MTC" : "Trénovací centrum metaversu <size=75%>(tutoriály)</size>",
+        "Dash.Actions.CloudHome" : "Cloudový domov",
 
         "Dash.Exit.Header" : "Ukončit Neos",
         "Dash.Exit.ExitAndSave" : "Ukončit a uložit změny v domovech",
@@ -109,6 +114,11 @@
         "World.Connection.Connected" : "Připojeno",
         "World.Connection.SyncingInitialState" : "Synchronizuji stav světa",
 
+        "World.Connection.LNL.DirectIP" : "LNL Direct IP",
+        "World.Connection.LNL.NATPunchthrough" : "LNL NAT Punchthrough {n}",
+        "World.Connection.LNL.Relay" : "LNL Relay",
+        "World.Connection.SteamNetworkingSockets" : "Steam Networking Sockets",
+
         "World.Error.AccessDenied" : "Přístup odepřen",
         "World.Error.SecurityViolation" : "Narušení bezpečnosti",
         "World.Error.OnlyRegisteredUsers" : "Pouze registrovaní uživatelé mohou vstoupit",
@@ -122,6 +132,7 @@
         "World.Error.FailedFetchingAuthentication" : "Nenalezeny informace pro authentikaci",
         "World.Error.JoinAlreadyRequested" : "Vstup byl už jednou vyžádán",
         "World.Error.FailedConnectToRelay" : "Nelze se připojit k relé",
+        "World.Error.FailedToConnect" : "Pokus o připojení selhal",
         "World.Error.NoPort" : "Nebyl specifikován port",
         "World.Error.IncompatibleVersion" : "Nekompatibilní verze Neosu",
         "World.Error.Unknown" : "Neznámá chyba",
@@ -361,7 +372,7 @@
         "User.Actions.Mute" : "Ztlumit",
         "User.Actions.Jump" : "Skočit",
         "User.Actions.Respawn" : "Respawnovat",
-        "User.Actions.Silence" : "Ztišit",
+        "User.Actions.Silence" : "Umlčet",
         "User.Actions.Kick" : "Odpojit",
         "User.Actions.Ban" : "Zabanovat",
 
@@ -435,6 +446,9 @@
         "Undo.InsertParent" : "Vložit parent na {name}",
         "Undo.Wiggler" : "Nemyslitelné děsy",
 
+        "Undo.ExtractMaterialsFromHierarchy" : "Extrahovat materiály z hierarchie",
+        "Undo.BatchConvertMaterials" : "Hromadně konvertovat materiály",
+
         "Tooltips.Dev.CreateNew" : "Vytvořit nový...",
         "Tooltips.Dev.Selection" : "Výběr: {mode}",
         "Tooltips.Dev.DevMode.Off" : "Vývojářský režim: Vypnutý",
@@ -473,13 +487,14 @@
         "Tooltip.Slicer.Add" : "Přidat řez",
         "Tooltip.Slicer.Clear" : "Resetovat stav",
 
-        "Tooltip.Material.RayMode" : "Režim paprsku",
-        "Tooltip.Material.AreaMode" : "Režim oblasti",
-        "Tooltip.Material.ObjectMode" : "Všechny v objektu",
-        "Tooltip.Material.SceneMode" : "Všechny ve světě",
+        "Tooltip.Material.RayMode" : "Režim aplikace:<br>Paprsek",
+        "Tooltip.Material.AreaMode" : "Režim aplikace:<br>Oblast",
+        "Tooltip.Material.ObjectMode" : "Režim aplikace:<br>Vše v objektu",
+        "Tooltip.Material.SceneMode" : "Režim aplikace:<br>Vše ve světě",
         "Tooltip.Material.CreateCopy" : "Vytvořit kopii",
         "Tooltip.Material.Edit" : "Editovat materiál",
         "Tooltip.Material.Convert" : "Převést na...",
+        "Tooltip.Material.ConvertAll" : "Převést všechny na...",
         "Tooltip.Material.CreateNew" : "Vytvořit nový",
 
         "Tooltip.Mesh.Edit" : "Editovat mesh",
@@ -558,6 +573,7 @@
         "AvatarCreator.SetupVolumeMeter" : "Přidat měřič hlasitosti",
         "AvatarCreator.SetupEyes" : "Automaticky nakonfigurovat oči",
         "AvatarCreator.ProtectAvatar" : "Ochránit avatara",
+        "AvatarCreator.SetupFaceTracking" : "Nakonfigurovat tracking obličeje",
         "AvatarCreator.CalibrateFeet" : "Kalibrovat chodidla",
         "AvatarCreator.CalibrateHips" : "Kalibrovat pánev",
         "AvatarCreator.AlignHeadForward" : "Zarovnat osu Z hlavy",
@@ -575,10 +591,13 @@
         "Importer.Folder.Individual.Description" : "Vytvoří individuální dialog pro každý soubor v složce",
         "Importer.Folder.Batch" : "Skupinový import",
         "Importer.Folder.Batch.Description" : "Vytvoří jeden dialog pro všechny soubory stejného typu",
+        "Importer.Folder.Minecraft" : "Minecraft svět",
+        "Importer.Folder.Minecraft.Description" : "Importuje Minecraft svět, pokud je instalován Mineways.",
 
         "Importer.Image.Title" : "Import obrázku",
         "Importer.Image.Prompt" : "Co importujete?",
         "Importer.Image.Regular" : "Obrázek / Texturu",
+        "Importer.Image.Screenshot" : "Neos fotografie <size=50%>(pořízena zde)</size>",
         "Importer.Image.360" : "360° fotku / skybox",
         "Importer.Image.StereoPhoto" : "Stereo foto",
         "Importer.Image.Stereo360" : "Stereo 360° foto",
@@ -649,6 +668,9 @@
         "Importer.Model.Advanced.RandomColors" : "Vygenerovat náhodné barvy",
         "Importer.Model.Advanced.SpawnMaterialOrbs" : "Vygenerovat materiály",
         "Importer.Model.Advanced.ImagesByName" : "Importovat obrázky podle jména",
+        "Importer.Model.Advanced.ForcePointFiltering" : "Vynutit Point Filtering",
+        "Importer.Model.Advanced.ForceNoMipMaps" : "Žádné MipMaps",
+        "Importer.Model.Advanced.ForceUncompressed" : "Vynutit nekomprimovaný",
 
         "Importer.Model.Advanced.Grabbable" : "Učinit uchopitelným",
         "Importer.Model.Advanced.Scalable" : "Učinit škálovatelným",
@@ -673,10 +695,10 @@
         "Credits.NCR.Description" : "Ethereum token s reálnou peněžní hodnotou",
         "Credits.KFC.Title" : "Kompletně Falešené Credity (<b>KFC</b>)",
         "Credits.KFC.Description" : "Testovací měna bez skutečné hodnoty",
-        "Credits.AmountPrompt" : "{action,select, send {Kolik chcete poslat?} withdraw {Kolik chcete vybrat?} tip {Kolik chcete tipovat?}}",
+        "Credits.AmountPrompt" : "{action,select, send {Kolik chcete poslat?} withdraw {Kolik chcete vybrat?} tip {Kolik chcete poslat jako spropitné?}}",
         "Credits.Amount" : "Množství: ",
         "Credits.Balance" : "Zůstatek: ",
-        "Credits.WithdrawalAddress" : "Adresa pro výběr: ",
+        "Credits.WithdrawalAddress" : "Adresa pro výběr:\n<color=red>Zkontrolujte si že vaše peněženka podporuje ERC-20 tokeny!</color>",
         "Credits.AnonymousTip" : "Anonymní spropitné: ",
         "Credits.TipMessage" : "Zpráva pro příjemce: ",
         "Credits.TransactionComment" : "Komentář transakce: ",
@@ -689,6 +711,7 @@
         "Credits.Sending" : "Posílám...",
         "Credits.Success" : "Úspěch!\nMůžete zavřít toto okno",
         "Credits.BlockchainWarning" : "Přesuny na blockchain mohou tvrat až 48 hodin.",
+        "Credits.TipConfirmation" : "Chystáte se poslat spropitné uživateli <b><color=#0ff>{username}</color></b>. Přejete si pokračovat?",
 
         "NewWorld.Title" : "Vytvořit svět",
         "NewWorld.Template" : "Typ světa:",
@@ -802,6 +825,8 @@
         "CameraControl.Control.AnyoneCanInteract" : "Všichni můžou interagovat",
         "CameraControl.Control.RenderPreviewForEveryone" : "Zobrazit náhled pro všechny",
         "CameraControl.Control.RenderPrivateUI" : "Zobrazit privátní rozhraní",
+        "CameraControl.Control.MotionBlur" : "Rozostření pohybu",
+        "CameraControl.Control.ScreenSpaceReflections" : "Screen space odrazy",
         "CameraControl.Control.SpawnPhotoInWorld" : "Vložit fotografii do světa",
         "CameraControl.Control.FlipPreview" : "Zrcadlit náhled",
         "CameraControl.Control.GroupDetectionRadius" : "Poloměr detekce skupiny: {n} m",
@@ -883,6 +908,7 @@
         "Settings.LaserSmoothing.ModulateExponent" : "Exponent modulace",
         "Settings.LaserSmoothing.ModulateSpeedMultiplier" : "Modulovaný násobek rychlosti",
         "Settings.LaserSmoothing.StickThreshold" : "Maximální vzdálenost \"lepení\"",
+        "Settings.Laser.ShowInDesktop" : "Zobrazit laser v desktopovém režimu",
         "Settings.LaserSmoothing.Reset" : "Resetovat nastavení laseru",
 
         "Settings.Audio.Header" : "Zvuk",
@@ -895,6 +921,7 @@
         "Settings.Audio.NoiseGateThreshold" : "Hranice pro potlačení šumu: {n}",
         "Settings.Audio.NormzliationThreshold" : "Hranice pro normalizaci: {n}",
         "Settings.Audio.NoiseSupression" : "Filtr pro potlačení okolního hluku (RNNoise)",
+        "Settings.Audio.WhisperVoiceVolume" : "Hlasitost hlasu v režimu šepotu (lidé mimo bublinu šepotu): {n,number,percent}",
         "Settings.Audio.InputDevice" : "Vstupní zařízení:",
         "Settings.Audio.OutputDevice" : "Výstupní zařízení:",
         "Settings.Audio.SelectInputDevice" : "Vyberte vstupní zvukové zařízení",
@@ -905,6 +932,8 @@
         "Settings.Audio.StopTest" : "Zastavit testování",
         "Settings.Audio.Monitoring" : "Monitorování mikrofonu:",
         "Settings.Audio.SystemDefaultOutput" : "Použít systémové výchozí",
+
+        "Settings.Graphics.DesktopFOV" : "Zorné pole pro desktopový režim",
 
         "Settings.Locale.ChangeLanguage" : "Změnit jazyk",
         "Settings.Locale.SelectLanguageHeader" : "Vyberte váš jazyk:",
@@ -997,9 +1026,14 @@
         "Inspector.SkinnedMesh.StripBlendshapesResult" : "Hotovo! Odstraněno: {n,plural, one {# blendshape} other {# blendshapes}}",
         "Inspector.SkinnedMesh.StripEmptyBones" : "Odstranit přebytečné prázdné bones",
         "Inspector.SkinnedMesh.StripBonesResult" : "Hotovo! Odstraněno: {n,plural, one {# bone} other {# bones}}",
+        "Inspector.SkinnedMesh.BakeNonDrivenBlendshapes" : "Zapéct nedrivované blendshapes",
+        "Inspector.SkinnedMesh.BakeBlendShapeResult" : "Zapečené blendshapes: {n}",
         "Inspector.SkinnedMesh.VisualizeBoneBounds" : "Vizualizovat bone bounding box",
         "Inspector.SkinnedMesh.VisualizeApproximateBoneBounds" : "Vizualizovat přibližné merged bone sphere bounds",
         "Inspector.SkinnedMesh.ClearBoundsVisuals" : "Odstranit bone bounding box vizuály",
+
+        "Inspector.SimpleAvatarProtection.RemoveAll" : "Odstranit veškeré instance",
+        "Inspector.SimpleAvatarProtection.ConfirmRemoveAll" : "ODSTRANIT Avatar Protection",
 
         "Inspector.BipedRig.GetDiagnosticInfo" : "Získat diagnostické info rigu",
         "Inspector.BipedRig.GenerateDebugVisuals" : "Generovat Ladicí Vizuály",
@@ -1209,22 +1243,22 @@
 
         "Tutorial.Intro.ScalingTitle" : "Škálování objektů",
         "Tutorial.Intro.ScalingVR" : "Pro <color=#ffdd77><b>škálování</b></color> objektu jej uchopte objema rukama a pohybujte jimi <color=#77ddff><b>k sobě/od sebe</b></color> - toto lze také dělat pomocí vašich laserů.",
-        "Tutorial.Intro.ScalingScreen" : "Pro <color=#ffdd77><b>škálování</b></color> objektu jej uchopte pomocí <color=#77ff77><b>pravého tlačítka myši</b></color> a <color=#77ddff><b>scrollujte</b></color> <color=#77ff77><b>kolečkem myši</b></color>.",
+        "Tutorial.Intro.ScalingScreen" : "Pro <color=#ffdd77><b>škálování</b></color> objektu jej uchopte pomocí <color=#77ff77><b>pravého tlačítka myši</b></color> a <color=#77ddff><b>scrollujte</b></color> <color=#77ff77><b>kolečkem myši</b></color> při stisknuté klávese <color=#77ddff><b>Shift</b></color>.",
 
         "Tutorial.Intro.ContextMenuTitle" : "Kontextové menu",
         "Tutorial.Intro.ContextMenuDescription" : "Vaše <color=#ffdd77><b>kontextové menu</b></color> poskytuje rychlý přístup k akcím.<br>Můžete jej otevřít/zavřít pomocí <color=#77ff77><b>{button}</b></color>.",
         "Tutorial.Intro.ContextMenu_ButtonB" : "tlačítka B",
         "Tutorial.Intro.ContextMenu_ButtonBY" : "tlačítka B nebo Y",
         "Tutorial.Intro.ContextMenu_ButtonMenu" : "tlačítka Menu",
-        "Tutorial.Intro.ContextMenu_Screen" : "klávesy R",
+        "Tutorial.Intro.ContextMenu_Screen" : "stisku kolečka myši",
 
         "Tutorial.Intro.DestroyingDuplicatingTitle" : "Ničení a duplikace objektů",
         "Tutorial.Intro.DestroyingDuplicatingVR" : "Když držíte objekt, můžete jej <b><color=#ffdd77>zničit nebo duplikovat</color></b> <color=#77ff77><b>kliknutím</b></color> na akci v kontextovém menu.",
-        "Tutorial.Intro.DestroyingDuplicatingScreen" : "Když držíte objekt, můžete jej <b><color=#ffdd77>zničit</color></b> stiskem <color=#77ff77><b>klávesy Delete</b></color>. <color=#ffdd77><b>Duplikovat</b></color> jej můžete stisknutím <color=#77ff77><b>klávesy F</b></color>.",
+        "Tutorial.Intro.DestroyingDuplicatingScreen" : "Když držíte objekt, můžete jej <b><color=#ffdd77>zničit</color></b> pomocí akce v <color=#ffdd77><b>Kontextovém menu</b></color>, nebo stiskem <color=#77ff77><b>klávesy Delete</b></color>. <color=#ffdd77><b>Duplikovat</b></color> jej můžete akcí v <color=#ffdd77><b>Kontextovém menu</b></color>.",
 
         "Tutorial.Intro.ScalingYourselfTitle" : "Škálování sebe sama",
         "Tutorial.Intro.ScalingYourselfVR" : "Pro <color=#ffdd77><b>škálování sebe sama</b></color>, povolte škálování ve vašem kontextovém menu, stiskněte <color=#77ff77><b>obě tlačítka uchopení</b></color> a pohybujte svými rukami <color=#77ddff><b>k sobě/od sebe</b></color>.",
-        "Tutorial.Intro.ScalingYourselfScreen" : "Pro <color=#ffdd77><b>škálování sebe sama</b></color>, přidržte <color=#77ff77><b>klávesu Ctrl</b></color> a <color=#77ddff><b>scrollujte</b></color> <color=#77ff77><b>kolečkem myši</b></color>.",
+        "Tutorial.Intro.ScalingYourselfScreen" : "Pro <color=#ffdd77><b>škálování sebe sama</b></color>, otevřte <color=#ffdd77><b>Kontextové menu</b></color> a povolte škálování. Následně přidržte <color=#77ff77><b>klávesu Ctrl</b></color> a <color=#77ddff><b>scrollujte</b></color> <color=#77ff77><b>kolečkem myši</b></color>.",
 
         "Tutorial.Intro.LocomotionTitle" : "Pohyb",
         "Tutorial.Intro.LocomotionDescription" : "Neos obsahuje mnoho různých metod pohybu.<br>Tyto možnosti pohybu jsou k dispozici ve vašem <color=#ffdd77>kontextovém menu</color>.",
@@ -1235,10 +1269,10 @@
         "Tutorial.Intro.Dashboard_ButtonA" : "tlačítko A",
         "Tutorial.Intro.Dashboard_ButtonAX" : "tlačítko A nebo X",
         "Tutorial.Intro.Dashboard_ButtonMenu" : "tlačítko Menu",
-        "Tutorial.Intro.Dashboard_ButtonScreen" : "kombinace kláves Ctrl + Space",
+        "Tutorial.Intro.Dashboard_ButtonScreen" : "klávesy Escape",
 
         "Tutorial.Intro.InventoryVR" : "Váš <color=#ffdd77><b>inventář</b></color> se nachází na vašem Dashboardu.<br>Pro <color=#77ddff><b>spawnování (vložení objektu do světa)</b></color> objektu <color=#77ff77><b>2x klikněte</b></color> na požadovanou položku ve vašem inventáři.<br>Pro <color=#77ddff><b>uložení</b></color> objektu jej <col0or=#77ddff><b>držte v ruce</b></color> a stiskněte <sprite name=inv-add> v pravém horním rohu obrazovky inventáře.",
-        "Tutorial.Intro.InventoryScreen" : "Váš <color=#ffdd77><b>inventář</b></color> se nachází na vašem Dashboardu.<br>Pro <color=#77ddff><b>spawnování (vložení objektu do světa)</b></color> objektu <color=#77ff77><b>2x klikněte</b></color> na požadovanou položku ve vašem inventáři.<br>Pro <color=#77ddff><b>uložení</b></color> objektu jej uchopte a stiskněte <color=#77ff77><b>klávesovou kombinaci Ctrl + S</b></color>.",
+        "Tutorial.Intro.InventoryScreen" : "Váš <color=#ffdd77><b>inventář</b></color> se nachází na vašem Dashboardu.<br>Pro <color=#77ddff><b>spawnování (vložení objektu do světa)</b></color> objektu <color=#77ff77><b>2x klikněte</b></color> na požadovanou položku ve vašem inventáři.<br>Pro <color=#77ddff><b>uložení</b></color> objektu jej uchopte a uložte jej skrze akci v <color=#ffdd77><b>Kontextovém menu</b></color>.",
 
         "Tutorial.Intro.HomeScreenTitle" : "Vaše domovská obrazovka",
         "Tutorial.Intro.HomeScreenDescription" : "Vaše <color=#ffdd77><b>domovská obrazovka</b></color> obsahuje facety s mnoha funkcemi.<br>Funkce obsahují nástroj pro tvorbu avatarů, kalibrátor trackování celého těla, ovládání kamery/streamování, a vytvoření nového světa.",
@@ -1254,7 +1288,7 @@
         "Tutorial.Intro.Website" : "Web",
         "Tutorial.Intro.OutroEnd" : "Pro podpoření projektu se můžete stát naším Patreon patronem.<br><br>Připojte se na náš Discord pro stavové aktualizace, síťování, nebo technickou podporu.",
 
-        "Tutorial.MTC.Avatars" : "Avataři a komunikace",
+        "Tutorial.MTC.Avatars" : "Avatar lobby",
         "Tutorial.MTC.Creation" : "Tvorba a užitečnost",
         "Tutorial.MTC.RecordingStreaming" : "Nahrávání a streamování",
         
@@ -1295,6 +1329,260 @@
         "Tutorial.Tooltip.ShapeSecondary" : "Změnit typ tvaru",
         "Tutorial.Tooltip.WigglerPrimary" : "Aplikovat nemyslitelné děsy na okolní svět",
         "Tutorial.Tooltip.WigglerSecondary" : "Částečně zachránit svou duši",
+
+        "Tutorial.BotDesigner.Start" : "Start",
+        "Tutorial.BotDesigner.WearAvatar" : "Převtělit do avatara",
+        "Tutorial.BotDesigner.Intro.Title" : "Neos Bot Designer",
+        "Tutorial.BotDesigner.Intro.Description" : "Nadesignujte si svého přizpůsobeného Neos Bota!",
+        "Tutorial.BotDesigner.List.Models" : "Modely",
+        "Tutorial.BotDesigner.List.Colors" : "Barvy",
+        "Tutorial.BotDesigner.ModelOptions.Genders.Male" : "Muž",
+        "Tutorial.BotDesigner.ModelOptions.Genders.Female" : "Žena",
+        "Tutorial.BotDesigner.ModelOptions.Cloak" : "Plášť",
+        "Tutorial.BotDesigner.ColorOptions.Metal" : "Kov",
+        "Tutorial.BotDesigner.ColorOptions.Secondary" : "Sekundární barva",
+        "Tutorial.BotDesigner.ColorOptions.Underbody" : "Barva podkladu",
+        "Tutorial.BotDesigner.ColorOptions.Emission" : "Emisivní barva",
+        "Tutorial.BotDesigner.ColorOptions.PickColor" : "Zvolte barvu",
+
+        "Tutorial.AvatarTutorial.Start" : "Start",
+        "Tutorial.AvatarTutorial.OpenWorld" : "Otevřít svět",
+        "Tutorial.AvatarTutorial.AvatarWorlds" : "Avatar světy",
+        "Tutorial.AvatarTutorial.Intro.Title" : "Neos avataři",
+        "Tutorial.AvatarTutorial.Intro.Description" : "Naučte se jak najít a používat avatary!",
+        "Tutorial.AvatarTutorial.Avatars.Title" : "Avataři",
+        "Tutorial.AvatarTutorial.FindingAvatars.Title" : "Hledání avatarů",
+        "Tutorial.AvatarTutorial.EquippingAndFavoriting.Title" : "Převtělování v avatara a ukládání jako oblíbeného",
+        "Tutorial.AvatarTutorial.AvatarCreation.Title" : "Tvorba avatara",
+        "Tutorial.AvatarTutorial.AvatarWorlds.Title" : "Avatar světy",
+        "Tutorial.AvatarTutorial.AvatarWorlds.Description" : "Vyberte avatar svět, do kterého chcete jít a klikněte na <color=#77ff77>Otevřít svět</color>.",
+        "Tutorial.AvatarTutorial.Avatars.Description" : "Avataři jsou způsobem pro vaše vyjadřování.<br>Avatary můžete najít nebo vytvořit uvnitř metaversu.",
+        "Tutorial.AvatarTutorial.FindingAvatars.Description" : "Běžní avataři jsou umíštění ve ložce<br>Neos Essentials ve vašem inventáři.<br><br>Komunitou vytvořené avatary lze najít ve veřejných složkách nebo publikovaných světech.",
+        "Tutorial.AvatarTutorial.EquippingAndFavoriting.Description" : "Jakmile máte avatara, převtělte se v něj kliknutím na něj<br>a zvolením Převtělit se do avatara.<br><br>Uložte si aktuálně používaného avatara kliknutím na <sprite name=Download>  .<br><br>Avatara můžete označit za oblíbeného vybráním<br>z vašeho inventáře a kliknutím na <sprite name=Favorite>  .",
+        "Tutorial.AvatarTutorial.AvatarCreation.Description" : "Pro importování a nastavení vlastního avatara, shlédněte<br>tutorial o tvorbě Neos avatarů.",
+
+        "Tutorial.Intro.PublicFolders.Title" : "Veřejné složky",
+        "Tutorial.Intro.PublicFolders.Description" : "Veřejné složky jsou jednoduchým způsobem pro sdílení a aktualizaci výtvorů (například avatarů) mezi uživateli komunity.<br><br>Pro uložení, uchopte složku, a následně při držení složky stiskněte <sprite name=Add>  ve vašem inventáři.<br><br>Můžete také ukládat pomocí vašeho kontextového menu.<br><br>Vyzkoušejte si to se složkou <b>The Starter Pack</b> - složkou určenou pro nové uživatele.",
+
+        "Tutorial.AvatarCreator.Intro.Title" : "Tvorba Neos avatarů",
+        "Tutorial.AvatarCreator.Intro.Description" : "Naučte se importovat a nastavit svého avatara!",
+        "Tutorial.AvatarCreator.Options.Start" : "Start",
+        "Tutorial.AvatarCreator.ImportingAssets.Title" : "Importování assetů",
+        "Tutorial.AvatarCreator.AvatarCreator.Title" : "Nástroj pro tvorbu avatarů",
+        "Tutorial.AvatarCreator.SettingUpMaterials.Title" : "Nastavování materiálů",
+        "Tutorial.AvatarCreator.DynamicBones.Title" : "Dynamic bones",
+        "Tutorial.AvatarCreator.Saving&Favoriting.Title" : "Ukládání a nastavování jako oblíbeného",
+        "Tutorial.AvatarCreator.ImportingAssets.Description" : "Vlastní avatar assety, včetně modelu, textur, normálových map, a dalších, mohou být importovány přímo skrz in-app průzkumník souborů (záložka Soubory na dashboardu), nebo přímým přetažením souborů z vaší pracovní plochy na okno Neosu.",
+        "Tutorial.AvatarCreator.AvatarCreator.Description" : "Po importování modelu, otevřte <color=#77ccff><b>nástroj pro tvorbu avatarů</b></color> z dashboardu a umístěte kotvy pro hlavu, ruce a nástroje dle vaší preference.",
+        "Tutorial.AvatarCreator.SettingUpMaterials.Description" : "Při nasazeném <color=#77ccff><b>Developer tooltipu</b></color> <sprite name=DevTip>  stiskněte <color=#77ff77><b>tlačítko sekundární akce</b></color> pro vybrání<br>avatara, a otevřete jeho hierarchii.<br>Přejděte na root avatara, a s nasazeným <color=#77ccff><b>Material tooltipem</b></color> <sprite name=MatTip>   <color=#77ff77><b>uchopte</b></color> slot CenteredRoot a stiskněte <color=#77ff77><b>talčítko sekundární akce</b></color> pro extrakci materiálů avatara.<br>Textury a mapy, které nebyly importovány přímo na avataru, mohou být přidány editací materiálu, uchopením textury, a kliknutím na cílové pole.",
+        "Tutorial.AvatarCreator.DynamicBones.Description" : "Dynamic bones mohou oživit a přidat interaktivitu jinak statickému rigu.<br>Přidejte komponentu DynamicBoneChain na počátek cílového bone chainu, sescrollujte dolu a klikněte na <color=#77ccff><b>Nastavit z potomků (pouze rig)</b></color>. Toto vytvoří defaultní dynamic bone chain. Jeho vlastnosti můžete editovat pomocí inspektoru.",
+        "Tutorial.AvatarCreator.SavingFavoriting.Description" : "Po dokončení základních nastavení, převtělte se do avatara, navigujte do složky vytvořené ve vašem inventáři, kde si přejete avatara uložit, a stiskněte <sprite name=Download>  .<br><br>Klikněte na vašeho avatara v inventáři, aby jste jej vybrali, a stiskněte <sprite name=Favorite>  pro nastavení avatara jako oblíbeného.",
+        "Tutorial.AvatarCreator.Outro.Title" : "Více informací a pomoc",
+        "Tutorial.AvatarCreator.Outro.Button.Wiki" : "Wiki",
+        "Tutorial.AvatarCreator.Outro.Description" : "Dodatečné zdroje ohledně tvorby avatarů, jejich nastavení, a další tutorial obsah lze najít na komunitou provozované wiki, Neos Discordu, a na YouTube.",
+
+        "Tutorial.CommunityYouTube.Title" : "Komunitní YouTube kanály",
+
+        "Tutorial.UserResources.UserResourcesTitle" : "Uživatelské zdroje",
+        "Tutorial.UserResources.SupportTitle" : "Jak podpořit Neos",
+        "Tutorial.UserResources.MerchandiseTitle" : "Neos Merch",
+
+        "Tutorial.Intro.BadgesNeosTeam" : "Neos Team",
+        "Tutorial.Intro.BadgesModerator" : "Moderátor",
+        "Tutorial.Intro.BadgesMentor" : "Mentor",
+        "Tutorial.Intro.BadgesDisabilityHearing" : "Poškození sluchu",
+        "Tutorial.Intro.BadgesDisabilityVision" : "Deficit barevného vidění",
+        "Tutorial.Intro.BadgesDisabilitySpeech" : "Porucha řeči",
+        "Tutorial.Intro.BadgesTitle" : "Odznaky",
+        "Tutorial.Intro.BadgesDescription" : "Odznaky jsou malé ikony, označující aspekty uživatele. Zde je pár důležitých odznaků k zapamatování. Odznaky hendikepů si lze samoobslužně přidělit skrze Neos bota (bot účet Neos v kontaktech ve hře).",
+        "Tutorial.Intro.HelpSite" : "Pomoc",
+
+        "Object.Mirror.Toggle" : "Lokální toggle",
+
+        "Tutorial.Streaming.StageControl" : "Ovládání jeviště",
+        "Tutorial.Streaming.StageUI" : "Zap/Vyp UI jeviště",
+        "Tutorial.Streaming.StageLights" : "Zap/Vyp osvětlení jeviště",
+        "Tutorial.Streaming.StageLightController" : "Zap/Vyp ovladač osvětlení",
+        "Tutorial.Streaming.StageMicrophone" : "Zap/Vyp stojan na mikrofon",
+
+        "Tutorial.Streaming.GreenScreenControl" : "Ovládání green screenu",
+        "Tutorial.Streaming.GreenScreenToggle360" : "Zap/Vyp 360<sup>o</sup> scénu",
+        "Tutorial.Streaming.GreenScreenTracking" : "Zap/Vyp trackovací reference",
+        "Tutorial.Streaming.GreenScreenMarker" : "Vytvořit tvořič Grabbables",
+        "Tutorial.Streaming.GreenScreenCycleScene" : "Cyklovat scénu",
+
+        "Tutorial.Streaming.StreamRoomControl" : "Ovládání streamovací místnosti",
+        "Tutorial.Streaming.StreamRoomSkyWall" : "Obrázek Sky Wall",
+        "Tutorial.Streaming.StreamRoomLayout" : "Nastavit rozložení",
+
+        "Tutorial.Streaming.StageLightShadowToggle" : "Zap/Vyp stíny osvětlení",
+
+        "Tutorial.Streaming.Microphone.Title" : "Nástroj mikrofon",
+        "Tutorial.Streaming.Microphone.UsageDescription" : "Po nasazení <b><color=#ffdd77>MIKROFON TIPU</b></color> můžete nahrávat audio držením <b><color=#77ff77>PRIMÁRNÍHO</b></color> tlačítka.",
+        "Tutorial.Streaming.Microphone.AudioTypeDescription" : "Zvolte <b><color=#ffdd77>FORMÁT AUDIO SOUBORU</b></color> který chcete otevřením <b><color=#dd77ff>KONTEXTOVÉHO MENU</b></color> na ruce s nasazeným nástrojem.",
+        "Tutorial.Streaming.Microphone.RecordingDescription" : "Metodu <b><color=#ffdd77>NAHRÁVÁNÍ</b></color> můžete změnit pomocí možností v <b><color=#dd77ff>KONTEXTOVÉM MENU</b></color>.",
+        "Tutorial.Streaming.Microphone.RawDescription" : "Metoda <b><color=#ffdd77>AUDIO VÝSTUPU</b></color> může být změněna na <b><color=#ffdd77>RAW AUDIO</b></color> formát v <b><color=#dd77ff>KONTEXTOVÉM MENU</b></color>.",
+        
+        "Tutorial.Streaming.AudioStreaming.Title" : "Streamování audia",
+        "Tutorial.Streaming.AudioStreaming.StreamAudioDescription" : "Audio z vašeho počítače můžete streamovat d o Neosu, aby jej mohli slyšet i ostatní. Pro stramování audia, klepněte na tlačítko <b><color=#ffdd77>STREAMOVAT AUDIO</b></color> na domovské stránce vašeho dashboardu.",
+        "Tutorial.Streaming.AudioStreaming.StartStreamingDescription" : "Zvolte zařízení, které chcete streamovat ze seznamu <b><color=#ffdd77>AUDIO VSTUPŮ</b></color>. Zvolený vstup si můžete poslechnout v tomto panelu než začnete streamovat. Klikněte na tlačítko <b><color=#77ff77>SPUSTIT STREAMOVÁNÍ</b></color> pro otevření panelu streamování audia.",
+        "Tutorial.Streaming.AudioStreaming.StopStreamingDescription" : "<b><color=#ffdd77>PANEL STREAMOVÁNÍ AUDIA</b></color> umožňuje ostatním v relaci slyšet audio z vašeho počítače. Zavření panelu stream <b><color=red>ZASTAVÍ</b></color>.",
+        
+        "Tutorial.Streaming.StreamControl.SkyboxTexture" : "Sem vložte texturu Skyboxu",
+        
+        "Tutorial.Streaming.Twitch.TwitchChat" : "Twitch Chat",
+        
+        "Tutorial.Streaming.Camera.BasicFunctions.Page1.Title" : "Fotoaparát",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page2.Title" : "Focení",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page3.Title" : "Ovládání zoomu v UI",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page4.Title" : "Fyzické ovládání zoomu",
+
+        "Tutorial.Streaming.Camera.Resolution.Page1.Title" : "Změna rozlišení",
+
+        "Tutorial.Streaming.Camera.Resolution.Page1.Description" : "Pod tlačítkem <sprite name=2K> můžete najít několik možností pro volbu <color=#ffdd77><b>ROZLIŠENÍ</b></color> fotografií, které <color=#ffdd77><b>FOTOAPARÁT</b></color> pořizuje.",
+
+        "Tutorial.Streaming.Camera.Mode.Page1.Title" : "Standardní fotografie",
+        "Tutorial.Streaming.Camera.Mode.Page2.Title" : "3D fotografie",
+        "Tutorial.Streaming.Camera.Mode.Page3.Title" : "360° fotografie",
+        "Tutorial.Streaming.Camera.Mode.Page4.Title" : "Průhledná fotografie",
+
+        "Tutorial.Streaming.Camera.ImageFilters.Page1.Title" : "Výchozí",
+        "Tutorial.Streaming.Camera.ImageFilters.Page2.Title" : "Saturovaný",
+        "Tutorial.Streaming.Camera.ImageFilters.Page3.Title" : "Černobílý",
+        "Tutorial.Streaming.Camera.ImageFilters.Page4.Title" : "Sépie",
+        "Tutorial.Streaming.Camera.ImageFilters.Page5.Title" : "Duha",
+
+        "Tutorial.Streaming.Camera.OptionsPlus.Page1.Title" : "Frustum",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page2.Title" : "Časovač",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page3.Title" : "Odrazy",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page4.Title" : "Blesk",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page5.Title" : "Velká obrazovka",
+
+        "Tutorial.Streaming.Camera.ExcludeTip.Page1.Title" : "Kde jej najít?",
+        "Tutorial.Streaming.Camera.ExcludeTip.Page2.Title" : "Použití",
+
+        "Tutorial.Streaming.Camera.BasicFunctions.Title" : "Základní funkce",
+
+        "Tutorial.Streaming.Camera.BasicFunctions.Page1.Description" : "Můžete <color=#77ff77><b>SPAWNOVAT</b></color> <color=#ffdd77><b>FOTOAPARÁT</b></color> ze <color=#dd77ff><b>SLOŽKY NEOS ESSENTIALS</b></color> ve vašem <color=#dd77ff><b>INVENTÁŘI</b></color>. Toto je váš hlavní nástroj pro <color=#77ff77><b>FOTOGRAFOVÁNÍ</b></color> v Neosu.",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page2.Description" : "<color=#77ff77><b>FOTOGRAFOVAT</b></color> můžete pomocí <color=#77ff77><b>PRIMÁRNÍ AKCE</b></color> na <color=#ffdd77><b>TLAČÍTKU</b></color> horní straně <color=#ffdd77><b>FOTOAPARÁTU</b></color> nebo <color=#77ff77><b>UCHOPENÍM</b></color> fotoaparátu kdekoliv<color=#dd77ff><b> NA TĚLE</b></color> a použitím <color=#77ff77><b>PRIMÁRNÍ AKCE</b></color>.",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page3.Description" : "Funkci <color=#ffdd77><b>ZOOM</b></color> můžete najít pod <sprite name=Options>. Interagovat s <color=#ffdd77><b>SLIDEREM ZOOMU</b></color> můžete pomocí <color=#77ff77><b>FYZICKÉ INTERAKCE</b></color> nebo použitím <color=#dd77ff><b>LASERŮ</b></color>, a <color=#77ff77><b>PRIMÁRNÍ AKCE</b></color>. ",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page4.Description" : "Zároveň můžete také <color=#ffdd77><b>ZOOM</b></color> ovládat <color=#77ff77><b>UCHOPENÍM</b></color> <color=#dd77ff><b>OBJEKTIVU FOTOAPARÁTU</b></color> vaší volnou rukou, a fyzickým <color=#77ff77><b>KROUCENÍM</b></color> <color=#dd77ff><b>OBJEKTIVU</b></color>.",
+       
+        "Tutorial.Streaming.Camera.Mode.Page1.Description" : "<color=#ffdd77><b>ZÁKLDNÍ NASTAVENÍ</b></color> lze najít pod <sprite name=Camera> Ve výchozím stavu, <color=#ffdd77><b>FOTOAPARÁT</b></color> je nastaven na <color=#ffdd77><b>STANDARDNÍ FOTO</b></color>, což je nejčastěji používané nastavení <color=#ffdd77><b>FOTOAPARÁTU</b></color> pro <color=#77ff77><b>FOTOGRAFOVÁNÍ</b></color>. ",
+        "Tutorial.Streaming.Camera.Mode.Page2.Description" : "Nastavení <color=#ffdd77><b>3D FOTO</b></color> umožňuje <color=#77ff77><b>POŘÍDIT</b></color> snímky s iluzí hloubky, dosažené vytvořením stereoskopického snímku. Všimněte si, že tento efekt je viditelný pouze pomocí VR headsetu, a že <color=#dd77ff><b>SCREENSHOT</b></color> bude při uložení vypadat jako dva snímky uložené vedle sebe v jednom souboru.",
+        "Tutorial.Streaming.Camera.Mode.Page3.Description" : "Možnost <color=#ffdd77><b>360° FOTO</b></color> umožňuje <color=#77ff77><b>ZACHYCENÍ</b></color> <color=#dd77ff><b>EQUIREKTANGULÁRNNÍCH 360° SNÍMKŮ</b></color>, které mohou být využity v <color=#dd77ff><b>PROJECTION360 MATERIÁLU</b></color>, pro využítí jako <color=#dd77ff><b>SKYBOX</b></color>.",
+        "Tutorial.Streaming.Camera.Mode.Page4.Description" : "Možnost <color=#ffdd77><b>VÝSTŘIŽEK</b></color> umožňuje <color=#77ff77><b>VYTVOŘENÍ</b></color> <color=#dd77ff><b>VÝSTŘIŽKU</b></color>. <color=#ffdd77><b>FOTOAPARÁT</b></color> promítá z přední strany <color=#dd77ff><b>LASER</b></color>, který renderuje pouze <color=#dd77ff><b>OBJEKT</b></color> kterým prochází na transparentní pozadí, které je spawnováno jako <color=#dd77ff><b>ULOŽITELNÝ OBJEKT</b></color> a <color=#dd77ff><b>SCREENSHOT</b></color>.",
+
+        "Tutorial.Streaming.Camera.ImageFilters.Page1.Description" : "<color=#ffdd77><b>OBRAZOVÉ FILTRY</b></color> můžete najít pod <sprite name=NoFilter>. Jako vždy, <color=#ffdd77><b>FOTOAPARÁT</b></color> je nastaven na <color=#ffdd77><b>VÝCHOZÍ</b></color> filtr.",
+        "Tutorial.Streaming.Camera.ImageFilters.Page2.Description" : "Filtr <color=#ffdd77><b>SATUROVANÝ</b></color> zvyšuje úroveň saturace barev a zároveň zvyšuje kontrast světlých a tmavých hodnot.",
+        "Tutorial.Streaming.Camera.ImageFilters.Page3.Description" : "Filtr <color=#ffdd77><b>ČERNOBÍLÝ</b></color> odstraňuje veškerou saturaci barev.",
+        "Tutorial.Streaming.Camera.ImageFilters.Page4.Description" : "Filtr <color=#ffdd77><b>SÉPIE</b></color> odstraňuje veškerou saturaci barev a posouvá jejich odstín pro emulaci vzhledu starých fotografií.",
+        "Tutorial.Streaming.Camera.ImageFilters.Page5.Description" : "Filtr <color=#ffdd77><b>DUHA</b></color> může být použit pro dodání barev do vašich fotografií.",
+
+        "Tutorial.Streaming.Camera.OptionsPlus.Page1.Description" : "<color=#ffdd77><b>POKROČILÁ NASTAVENÍ</b></color> lze najít pod <sprite name=OptionsPlus>. Ve výchozím stavu není žádná z těchto možností aktivní. <color=#ffdd77><b>FRUSTRUM</b></color> je první možnost ve sloupci - vytváří <color=#dd77ff><b>VISUÁL</b></color> znázorňující prostor viditelný na <color=#dd77ff><b>NÁHLEDOVÉ OBRAZOVCE</b></color> <color=#ffdd77><b>FOTOAPARÁTU</b></color>.",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page2.Description" : "Možnost <color=#ffdd77><b>ČASOVAČ</b></color> může být <color=#77ff77><b>AKTIVOVÁNA</b></color> kliknutím na <sprite name=Timer>. Toto vytvoří 10ti sekundový odpočítávací časovač, který se spustí <color=#77ff77><b>POŘÍZENÍM</b></color> snímku použitím <color=#77ff77><b>PRIMÁRNÍ AKCE</b></color> na <color=#dd77ff><b>TLAČÍTKO</b></color> na vrchní straně <color=#ffdd77><b>FOTOAPARÁTU</b></color>, nebo <color=#77ff77><b>DRŽENÍM</b></color> <color=#dd77ff><b>TĚLA FOTOAPARÁTU</b></color> a stisknutím <color=#77ff77><b>TLAČÍTKA PRIMÁRNÍ AKCE</b></color>.",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page3.Description" : "Možnost <color=#ffdd77><b>SCREENSPACE ODRAZY</b></color> povoluje odrazy odvozené od pohledu <color=#ffdd77><b>FOTOAPARÁTU</b></color>.",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page4.Description" : "Možnost <color=#ffdd77><b>BLESK</b></color> může být <color=#77ff77><b>AKTIVOVÁNA</b></color> kliknutím na <sprite name=Lightning>. Toto vytvoří <color=#77ff77><b>ZÁBLESK</b></color> <color=#dd77ff><b>SVĚTLA</b></color> z vrchní části <color=#dd77ff><b>TĚLA FOTOAPARÁTU</b></color>, které <color=#77ff77><b>OSVĚTLÍ</b></color> <color=#dd77ff><b>SCÉNU</b></color>. ",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page5.Description" : "Možnost <color=#ffdd77><b>VELKÁ OBRAZOVKA</b></color> může být <color=#77ff77><b>AKTIVOVÁNA</b></color> kliknutím na <sprite name=BigScreen>. Toto vytvoří větší <color=#dd77ff><b>NÁHLEDOVOU OBRAZOVKU</b></color> nad <color=#dd77ff><b>TĚLEM FOTOAPARÁTU</b></color>. Zároveň lze možnost také aktivovat použitím <color=#77ff77><b>PRIMÁRNÍ AKCE</b></color> nebo <color=#77ff77><b>FYZIKÁLNÍHO DOTYKU</b></color> na <color=#dd77ff><b>TLAČÍTKO</b></color> ve středu vrchní strany <color=#dd77ff><b>TĚLA FOTOAPARÁTU</b></color>.",
+
+        "Tutorial.Streaming.Camera.ExcludeTip.Page1.Description" : "<b><color=#ffdd77>CAMERA OBJECT EXCLUDE TIP</color></b> najdete ve vašem <b><color=#77ddff>INVENTÁŘI</b></color> ve složce <b><color=#77ddff>ESSENTIAL TOOLS --> MISC</Color></b>.",
+        "Tutorial.Streaming.Camera.ExcludeTip.Page2.Description" : "Po nasazení nástroje <b><color=#77ff77>NAMIŘTE</b></color> na objekt, který si přejete vynechat z pohledu kamery/fotoaparátu, a stiskněte <b><color=#77ff77>TLAČÍTKO SEKUNDÁRNÍ AKCE</b></color>. Stiskněte <b><color=#77ff77>TLAČÍTKO PRIMÁRNÍ AKCE</b></color> pro zrušení změny.",
+        
+        "Tutorial.Streaming.Camera.Resolution.Title" : "Rozlišení",
+        "Tutorial.Streaming.Camera.Mode.Title" : "Režim",
+        "Tutorial.Streaming.Camera.ImageFilters.Title" : "Obrazové filtry",
+        "Tutorial.Streaming.Camera.OptionsPlus.Title" : "Možnosti+",
+        "Tutorial.Streaming.Camera.ExcludeTip.Title" : "Camera Object Exclude Tip",
+        "Tutorial.Streaming.Camera.Intro.Title" : "Tutoriál fyzického fotoaparátu",
+
+        "Tutorial.Streaming.Camera.Intro.Description" : "Naučte se všechny funkce fyzického fotoaparátu",
+        
+        "Tutorial.Streaming.LightTip.Intro.Title" : "Light Tip tutoriál",
+        "Tutorial.Streaming.LightTip.Intro.Description" : "Naučte se všechny funkce light tipu",
+
+        "Tutorial.Streaming.LightTip.Titles.BasicUsage" : "Základní použití",
+        "Tutorial.Streaming.LightTip.Titles.TypesOfLights" : "Typy světel",
+        "Tutorial.Streaming.LightTip.Titles.TypesOfShadows" : "Typy stínů",
+        "Tutorial.Streaming.LightTip.Titles.ChangingColor" : "Změna barvy",
+
+        "Tutorial.Streaming.LightTip.BasicUsage.Page1.Title" : "Light Tip",
+        "Tutorial.Streaming.LightTip.BasicUsage.Page2.Title" : "Tvorba světla",
+
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page1.Title" : "Bodové",
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page2.Title" : "Kuželové",
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page3.Title" : "Slunce/Směrové",
+
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page1.Title" : "Žádné stíny",
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page2.Title" : "Ostré stíny",
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page3.Title" : "Jemné stíny",
+
+        "Tutorial.Streaming.LightTip.ChangingColor.Page1.Title" : "Panel výběru barvy",
+
+        "Tutorial.Streaming.LightTip.BasicUsage.Page1.Description" : "Můžete <color=#77ff77><b>SPAWNOVAT</b></color> <color=#ffdd77><b>LIGHT TIP</b></color> ze složky <color=#dd77ff><b>NEOS ESSENTIALS</b></color> ve vašem <color=#dd77ff><b>INVENTÁŘI</b></color>. Toto je váš hlavní nástroj pro <color=#77ff77><b>PŘIDÁVÁNÍ SVĚTEL</b></color> do světů v Neosu.",
+        "Tutorial.Streaming.LightTip.BasicUsage.Page2.Description" : "Ve výchozím stavu, <color=#ffdd77><b>LIGHT TIP</b></color> vytváří <color=#dd77ff><b>BODOVÉ SVĚTLO</b></color>, když je <color=#77ff77><b>STISKNUTO TLAČÍTKO PRIMÁRNÍ AKCE</b></color>. Když je <color=#77ff77><b>TLAČÍTKO PRIMÁRNÍ AKCE</b></color> drženo, tažením je ovlivňován <color=#dd77ff><b>JAS</b></color> světla, v závislosti na <color=#dd77ff><b>VZDÁLENOSTI</b></color>, kterou byla ruka <color=#77ff77><b>TAŽENA</b></color>.",
+
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page1.Description" : "<color=#ffdd77><b>BODOVÉ SVĚTLO</b></color> vytvoří světlo, <color=#77ff77><b>OSVĚTLUJÍCÍ</b></color> všechny směry z jednoho, s <color=#dd77ff><b>OPADAJÍCÍ INTENZITOU</b></color>.",
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page2.Description" : "<color=#ffdd77><b>KUŽELOVÉ SVĚTLO</b></color> vytvoří světlo, <color=#77ff77><b>OSVĚTLUJÍCÍ</b></color> v jednom směru, ve tvaru kuželu,vycházejícího z jednoho bodu s <color=#dd77ff><b>OPADAJÍCÍ INTENZITOU</b></color>.",
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page3.Description" : "<color=#ffdd77><b>SMĚROVÉ SVĚTLO</b></color> vytvoří světlo, <color=#77ff77><b>OSVĚTLUJÍCÍ</b></color> svět v jednom směru bez <color=#dd77ff><b>OPADAJÍCÍ INTENZITY</b></color>.",
+
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page1.Description" : "<b><color=#77ff77>OBJEKTY</b></color> <b><color=red>NEBUDOU</b></color> mít žádné stíny.",
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page2.Description" : "<b><color=#77ff77>OBJEKTY</b></color> budou mít stíny s ostrými okraji.",
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page3.Description" : "<b><color=#77ff77>OBJEKTY</b></color> budou mít stíny s jemnými okraji.",
+
+        "Tutorial.Streaming.LightTip.ChangingColor.Page1.Description" : "<b><color=#ffdd77>BARVU</b></color> <b><color=#ffdd77>SVĚTLA</b></color> můžete upravit pomocí možnosti <b><color=#77ff77>ZMĚNIT BARVU</b></color> v <b><color=#77ff77>KONTEXTOVÉM MENU</b></color>.",
+        
+        "Tutorial.Streaming.StreamCamera.CameraControl.Title" : "Ovládání kamery",
+        "Tutorial.Streaming.StreamCamera.Overview.Title" : "Přehled ovládání kamery",
+        "Tutorial.Streaming.StreamCamera.ControlMovement.Title" : "Ovládání pohybu kamery",
+        "Tutorial.Streaming.StreamCamera.Zoom.Title" : "Ovládání zoomu",
+        "Tutorial.Streaming.StreamCamera.SmoothPOV.Title" : "Stabilizovaný pohled 1. osoby",
+        "Tutorial.Streaming.StreamCamera.ThirdPerson.Title" : "Pohled 3. osoby",
+        "Tutorial.Streaming.StreamCamera.Group.Title" : "Skupina",
+        "Tutorial.Streaming.StreamCamera.World.Title" : "Svět",
+        "Tutorial.Streaming.StreamCamera.Manual.Title" : "Manuální",
+        "Tutorial.Streaming.StreamCamera.Mirror.Title" : "Poslat na monitor",
+
+        "Tutorial.Streaming.StreamCamera.CameraAnchors.Page1.Description" : "Pro <b><color=#77ff77>SPAWNONVÁNÍ</color></b> <b><color=#ffdd77>KOTVY KAMERY</b></color>, stiskněte tlačítko <b><color=#77ddff>VYTVOŘIT KOTVU KAMERY</b></color> na levé straně vašeho UI. Po vytvoření můžete na ni snapovat vaši kameru, a to tak, že ji vyberete <b><color=#77ff77>TLAČÍTKEM PRIMÁRNÍ AKCE</b></color>.",
+
+        "Tutorial.Streaming.StreamCamera.Photo.Title" : "Foto",
+        "Tutorial.Streaming.StreamCamera.360.Title" : "360° Foto",
+        "Tutorial.Streaming.StreamCamera.Users.Title" : "Uživatelé",
+        "Tutorial.Streaming.StreamCamera.CameraOptions.Title" : "Možnosti kamery",
+        "Tutorial.Streaming.StreamCamera.Anchor.Title" : "Spawnování kotvy",
+        "Tutorial.Streaming.StreamCamera.ExtraCameraControls.Title" : "Extra ovládání kamery",
+        "Tutorial.Streaming.StreamCamera.MotionSettings.Title" : "Nastavení pohybu kamery",
+        "Tutorial.Streaming.StreamCamera.AnchorSettings.Title" : "Nastavení kotvy kamery",
+        "Tutorial.Streaming.StreamCamera.OBS.Title" : "Propojení s OBS",
+        "Tutorial.Streaming.StreamCamera.Twitch.Title" :"Propojení s Twitchem",
+
+        "Tutorial.Streaming.StreamCamera.BasicFunctions.Page1.Description" : "Můžete <color=#77ff77><b>SPAWNOVAT</b></color> <b><color=#ffdd77>OVLÁDACÍ PANEL KAMERY</b></color> z <b><color=#ffdd77>NEOS DASHBOARDU</b></color> na záložce domů, na facetu nazavném Kamera/Streamování. Toto je váš hlavní nástroj pro streamování z Neosu.",
+        "Tutorial.Streaming.StreamCamera.BasicFunctions.Page2.Description" : "<b><color=#ffdd77>OVLÁDACÍ PANEL KAMERY</b></color> má mnoho různých funkcí, které můžete použít k vylepšení kvality vašich streamů/video nahrávek. Tyto funkce zahrnují pohyb kamery, režimy, kotvy, nastavení, Twitch chat a více.",
+        "Tutorial.Streaming.StreamCamera.BasicFunctions.Page3.Description" : "Pohybovou funkci <b><color=#ffdd77>OVLÁDACÍHO PANELU KAMERY</b></color> můžete najít v horním levém rohu náhledové obrazovky. Pomocí této funkce můžete upravit pohled a pozici kamer. Dále můžete kliknout na tlačítko Reset pro reset pozice kamery.",
+        "Tutorial.Streaming.StreamCamera.BasicFunctions.Page4.Description" : "Pro ovládání <color=#ffdd77><b>ZOOMU</b></color>, použijte <b><color=#77ff77>PRIMÁRNÍ AKCI</b></color> na šedý proužek na spodní části náhledové obrazovky, a posuťe posuvník vpravo nebo vlevo.",
+
+        "Tutorial.Streaming.StreamCamera.Modes.Page1.Description" : "Režim <b><color=#ffdd77>STABILIZOVANÝ POHLED 1. OSOBY</b></color> nastaví kameru na váš pohled z první osoby a vyhladí veškeré pohyby.",
+        "Tutorial.Streaming.StreamCamera.Modes.Page2.Description" : "Režim <b><color=#ffdd77>3. OSOBY</b></color> vám umožňuje dívat se na sebe z vnější perspektivy. Pozici kamery můžete upravit pomocí ovládání pohybu kamery na náhledové obrazovce.",
+        "Tutorial.Streaming.StreamCamera.Modes.Page3.Description" : "Režim <b><color=#ffdd77>SKUPINA</b></color> automaticky upravuje svůj pohled pro udržení uživatelů poblíž uvnitř pohledu.",
+        "Tutorial.Streaming.StreamCamera.Modes.Page4.Description" : "Režim <b><color=#ffdd77>SVĚT</b></color> udržuje kameru stacionární, a sleduje uživatele.",
+        "Tutorial.Streaming.StreamCamera.Modes.Page5.Description" : "<b><color=#ffdd77>MANUÁLNÍ</b></color> režim vám umožňuje používat streamovací kameru jako fyzickou kameru.",
+
+        "Tutorial.Streaming.StreamCamera.Functions.Page1.Description" : "<b><color=#ffdd77>POSLAT NA MONITOR</b></color> změní váš desktopový náhled z VR headsetu na pohled streamovací kamery - tato možnost by měla být používána při streamování. ",
+        "Tutorial.Streaming.StreamCamera.Functions.Page2.Description" : "<b><color=#ffdd77>FOTO</b></color> sejme snímek aktuálního pohledu kamery. Tyto snímky se uloži do vaší knihovny snímků obrazovky.",
+        "Tutorial.Streaming.StreamCamera.Functions.Page3.Description" : "<b><color=#ffdd77>360° FOTO</b></color> pořídí 360° sníme scény z aktuální pozice kamery. Tyto fotografie se uloží do vaší knihovny snímků obrazovky.",
+        "Tutorial.Streaming.StreamCamera.Functions.Page4.Description" : "Obrazovka <b><color=#ffdd77>UŽIVATELÉ</b></color> vám umožňuje měnit pohled kamery na perspektivu jiného uživatele, zároveň také modifikovat hlasitosti a povolení kamery pro každou osobu.",
+
+        "Tutorial.Streaming.StreamCamera.BasicFunctions.Page5.Description" : "<b><color=#ffdd77>MANUÁLNÍ</b></color> režim vám umožňuje využívat streamovací kameru jako fyzickou kameru.",
+
+        "Tutorial.Streaming.StreamCamera.Intro.Title" : "Tutoriál streamovací kamery",
+        "Tutorial.Streaming.StreamCamera.Intro.Description" : "Naučte se všechny funkce streamovací kamery",
+
+        "Tutorial.Streaming.StreamCamera.Options.Page1.Description" : "<b><color=#ffdd77>MOŽNOSTI OVLÁDÁNÍ</b></color> můžet nalézt úplně na levé okraji UI. Zde můžete měnit nastavení podobná jako u fyzické kamery, zároveň také rendering jmenovek a další.",
+
+        "Tutorial.Streaming.StreamCamera.Features.Page1.Description" : "Extra možnosti ovládání kamery lze nalézt na úplně pravém okraji UI, stisknutím ikony <b><color=#77ddff>OZUBENÉHO KOLEČKA</b></color> vpravo nahoře na náhledové obrazovce. Zde můžete nastavit možnosti renderování, kontroly uživatelů, a vzdálenosti následování.",
+        "Tutorial.Streaming.StreamCamera.Features.Page2.Description" : "Ikona <b><color=#77ddff>ŠIPKY</b></color> otevírá panel ovládající pohyb kamery. Toto může zahrnovat pozici, úhel, a zorné pole kamery pro různé přednastavené pohledy.",
+        "Tutorial.Streaming.StreamCamera.Features.Page3.Description" : "Ikona <b><color=#77ddff>WAYPOINTU</b></color> otevírá panel pro ovládání kotev kamery. Toto je užitečné pro přepínání na různé kotvy kamery připravené ve světě, a také upravu rychlosti interpolace mezi nimi.",
+        "Tutorial.Streaming.StreamCamera.Features.Page4.Description" : "Ikona <b><color=#77ddff>OBS</b></color> otevírá panel pro připojení k OBS. Toto vám umožňuje rychle zahájit nahrávání pomocí OBS.",
+        "Tutorial.Streaming.StreamCamera.Features.Page5.Description" : "Ikona <b><color=#77ddff>TWITCH</b></color> vám umožňuje zobrazit váš Twitch chat. Váš kanál můžete připojit napsáním jména kanálu do pole vlevo nahoře.",
 
         "Exiting.SavingItems" : "Ukládám {n, plural, one {# položku} few {# položky} other {# položek}}...",
         "Exiting.SavingChanges" : "Ukládám změny...",

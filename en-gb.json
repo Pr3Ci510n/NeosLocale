@@ -39,12 +39,19 @@
         "Inspector.Texture.ConvertToGrayscaleAverage" : "Convert to greyscale (average)",
 
         "Inspector.Audio.Normalize" : "Normalise Volume",
+        "Inspector.Audio.DenoiseRNNoise" : "Denoise (RNNoise, optimised for voice at 48 kHz)",
 
         "Wizard.AssetOptimization.Title" : "Asset Optimisation Wizard",
 
         "Tutorial.Tooltip.ColorPrimary" : "Apply Colour",
         "Tutorial.Tooltip.ColorSecondary" : "Pick Colour",
         "Tutorial.Tooltip.LightSecondary" : "Change Colour",
+		
+        "Tutorial.BotDesigner.ColorOptions.PickColor" : "Pick Colour",
+		
+        "Tutorial.AvatarTutorial.EquippingAndFavoriting.Title" : "Equipping & Favouriting",
+		
+        "Tutorial.Intro.BadgesMentor" : "Mentour",
 
         "Dummy" : "Dummy"
     }

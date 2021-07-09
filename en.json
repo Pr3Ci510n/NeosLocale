@@ -1,9 +1,11 @@
 {
     "localeCode" : "en",
     "authors" : ["Frooxius", "Enverex", "rampa_3", "Melnus", "dfgHiatus"],
-    "messages" : 
+    "messages" :
     {
         "General.OK" : "OK",
+        "General.Start" : "Start",
+        "General.Finish" : "Finish",
         "General.Cancel" : "Cancel",
         "General.Continue" : "Continue",
         "General.Next" : "Next",
@@ -48,6 +50,7 @@
 
         "Interaction.Destroy" : "Destroy",
         "Interaction.Duplicate" : "Duplicate",
+        "Interaction.SaveToInventory" : "Save To Inventory",
         "Interaction.Undo" : "Undo",
         "Interaction.Redo" : "Redo",
         "Interaction.EquipTool" : "Equip",
@@ -85,6 +88,8 @@
 
         "Dash.Actions.PasteFromClipboard" : "Paste content from clipboard",
 
+        "Dash.Actions.TurnOffUIEdit" : "Turn off UI Edit Mode",
+
         "Dash.Actions.CoreWorldsHeader" : "Core Worlds",
         "Dash.Actions.ContentHub" : "Content Hub",
         "Dash.Actions.MTC" : "Metaverse Training Center <size=75%>(tutorials)</size>",
@@ -109,6 +114,11 @@
         "World.Connection.Connected" : "Connected",
         "World.Connection.SyncingInitialState" : "Syncing initial world state",
 
+        "World.Connection.LNL.DirectIP" : "LNL Direct IP",
+        "World.Connection.LNL.NATPunchthrough" : "LNL NAT Punchthrough {n}",
+        "World.Connection.LNL.Relay" : "LNL Relay",
+        "World.Connection.SteamNetworkingSockets" : "Steam Networking Sockets",
+
         "World.Error.AccessDenied" : "Access Denied",
         "World.Error.SecurityViolation" : "Security Violation",
         "World.Error.OnlyRegisteredUsers" : "Only registered users are allowed to join",
@@ -122,6 +132,7 @@
         "World.Error.FailedFetchingAuthentication" : "Failed to fetch authentication info",
         "World.Error.JoinAlreadyRequested" : "Join has already been requested",
         "World.Error.FailedConnectToRelay" : "Failed to connect to relay",
+        "World.Error.FailedToConnect" : "Failed to establish connection",
         "World.Error.NoPort" : "No Port Specified",
         "World.Error.IncompatibleVersion" : "Incompatible Neos Version",
         "World.Error.Unknown" : "Unknown Error",
@@ -372,8 +383,8 @@
         "Contacts.IgnoreRequest" : "Ignore Request",
         "Contacts.Invite" : "Invite Here",
         "Contacts.SendCredits" : "Send Credits",
-        "Contacts.BanFromAllSessions" : "Ban from ALL my sessions",
-        "Contacts.UnbanFromAllSessions" : "Unban from ALL my sessions",
+        "Contacts.BanFromAllSessions" : "Ban from my hosted sessions",
+        "Contacts.UnbanFromAllSessions" : "Unban from my hosted sessions",
         "Contacts.BanFromCurrentWorld" : "Ban from current world",
         "Contacts.UnbanFromCurrentWorld" : "Unban from current world",
         "Contacts.RecordingVoiceMessage" : "Recording voice...",
@@ -435,6 +446,9 @@
         "Undo.InsertParent" : "Insert Parent for {name}",
         "Undo.Wiggler" : "Evil Stuff",
 
+        "Undo.ExtractMaterialsFromHierarchy" : "Extract Materials from Hierarchy",
+        "Undo.BatchConvertMaterials" : "Batch convert materials",
+
         "Tooltips.Dev.CreateNew" : "Create New...",
         "Tooltips.Dev.Selection" : "Selection: {mode}",
         "Tooltips.Dev.DevMode.Off" : "Developer Mode: Off",
@@ -480,6 +494,7 @@
         "Tooltip.Material.CreateCopy" : "Create Copy",
         "Tooltip.Material.Edit" : "Edit Material",
         "Tooltip.Material.Convert" : "Convert to...",
+        "Tooltip.Material.ConvertAll" : "Convert All to...",
         "Tooltip.Material.CreateNew" : "Create New",
 
         "Tooltip.Mesh.Edit" : "Edit Mesh",
@@ -576,10 +591,13 @@
         "Importer.Folder.Individual.Description" : "Creates a separate import dialog for each supported file in the folder",
         "Importer.Folder.Batch" : "Batch import",
         "Importer.Folder.Batch.Description" : "Creates a single importer for each type, using same settings for each file",
+        "Importer.Folder.Minecraft" : "Minecraft World",
+        "Importer.Folder.Minecraft.Description" : "Imports a Minecraft World if Mineways is installed.",
 
         "Importer.Image.Title" : "Image Importer",
         "Importer.Image.Prompt" : "What are you importing?",
         "Importer.Image.Regular" : "Image / Texture",
+        "Importer.Image.Screenshot" : "Neos Photo <size=50%>(captured here)</size>",
         "Importer.Image.360" : "360 photo / skybox",
         "Importer.Image.StereoPhoto" : "Stereo Photo",
         "Importer.Image.Stereo360" : "Stereo 360 photo",
@@ -650,6 +668,9 @@
         "Importer.Model.Advanced.RandomColors" : "Generate Random Colors",
         "Importer.Model.Advanced.SpawnMaterialOrbs" : "Spawn Material Orbs",
         "Importer.Model.Advanced.ImagesByName" : "Import Images by Name",
+        "Importer.Model.Advanced.ForcePointFiltering" : "Force Point Filtering",
+        "Importer.Model.Advanced.ForceNoMipMaps" : "No MipMaps",
+        "Importer.Model.Advanced.ForceUncompressed" : "Force Uncompressed",
 
         "Importer.Model.Advanced.Grabbable" : "Make Grabbable",
         "Importer.Model.Advanced.Scalable" : "Make Scalable",
@@ -677,7 +698,7 @@
         "Credits.AmountPrompt" : "{action,select, send {How much do you want to send?} withdraw {How much do you want to withdraw?} tip {How much do you want to tip?}}",
         "Credits.Amount" : "Amount: ",
         "Credits.Balance" : "Balance: ",
-        "Credits.WithdrawalAddress" : "Withdrawal Address: ",
+        "Credits.WithdrawalAddress" : "Withdrawal Address:\n<color=red>Make sure your wallet supports ERC-20 tokens!</color>",
         "Credits.AnonymousTip" : "Anonymous Tip: ",
         "Credits.TipMessage" : "Tip Message: ",
         "Credits.TransactionComment" : "Transaction Comment: ",
@@ -690,6 +711,7 @@
         "Credits.Sending" : "Sending...",
         "Credits.Success" : "Success!\nYou can close this window.",
         "Credits.BlockchainWarning" : "Please note that the transfer to blockchain can take up to 48 hours.",
+        "Credits.TipConfirmation" : "You are about to send a tip to <b><color=#0ff>{username}</color></b>. Would you like to proceed?",
 
         "NewWorld.Title" : "New World",
         "NewWorld.Template" : "World Template:",
@@ -803,6 +825,8 @@
         "CameraControl.Control.AnyoneCanInteract" : "Anyone Can Interact",
         "CameraControl.Control.RenderPreviewForEveryone" : "Render Preview For Everyone",
         "CameraControl.Control.RenderPrivateUI" : "Render Private UI",
+        "CameraControl.Control.MotionBlur" : "Motion Blur",
+        "CameraControl.Control.ScreenSpaceReflections" : "Screen Space Reflections",
         "CameraControl.Control.SpawnPhotoInWorld" : "Spawn photo in the world",
         "CameraControl.Control.FlipPreview" : "Flip Preview",
         "CameraControl.Control.GroupDetectionRadius" : "Group Detection Radius: {n} m",
@@ -873,6 +897,7 @@
         "Settings.LegacyGripEquip" : "Enable Legacy Double Grip Equip",
         "Settings.LegacyWorldSwitcher" : "Enable Legacy World Switcher",
         "Settings.FetchIncompatibleSessions" : "Show Incompatible Sessions",
+        "Settings.DoNotSendReadStatus" : "Don't send realtime message read status",
         "Settings.MaxConcurrentAssetTransfers" : "Max Concurrent Asset Transfers",
         "Settings.AutosaveScreenshotPath" : "Auto-save screenshot path",
         "Settings.DebugInputBinding" : "Debug Input Bindings",
@@ -897,6 +922,7 @@
         "Settings.Audio.NoiseGateThreshold" : "Noise Gate Threshold: {n}",
         "Settings.Audio.NormzliationThreshold" : "Normalization Threshold: {n}",
         "Settings.Audio.NoiseSupression" : "Noise Suppression Filter (RNNoise)",
+        "Settings.Audio.WhisperVoiceVolume" : "Whisper Voice Volume (outside bubble): {n,number,percent}",
         "Settings.Audio.InputDevice" : "Audio Input Device:",
         "Settings.Audio.OutputDevice" : "Audio Output Device:",
         "Settings.Audio.SelectInputDevice" : "Select Audio Input Device",
@@ -907,6 +933,8 @@
         "Settings.Audio.StopTest" : "Stop Testing",
         "Settings.Audio.Monitoring" : "Audio Input Monitoring:",
         "Settings.Audio.SystemDefaultOutput" : "Use System Default",
+
+        "Settings.Graphics.DesktopFOV" : "Desktop FOV",
 
         "Settings.Locale.ChangeLanguage" : "Change Language",
         "Settings.Locale.SelectLanguageHeader" : "Select your language:",
@@ -938,7 +966,7 @@
 
         "Settings.WindowsIntegration" : "Windows Integration",
         "Settings.LinuxIntegration" : "Linux Integration",
-        
+
         "Settings.System.KeepOriginalScreenshotFormat" : "Keep original screenshot format",
         "Settings.System.KeepOriginalScreenshotFormat.Description" : "When enabled, screenshots won't be converted to JPG when saved into the Documents folder",
 
@@ -999,9 +1027,14 @@
         "Inspector.SkinnedMesh.StripBlendshapesResult" : "Done! Stripped: {n,plural, one {# blendshape} other {# blendshapes}}",
         "Inspector.SkinnedMesh.StripEmptyBones" : "Strip Empty Bones",
         "Inspector.SkinnedMesh.StripBonesResult" : "Done! Stripped: {n,plural, one {# bone} other {# bones}}",
+        "Inspector.SkinnedMesh.BakeNonDrivenBlendshapes" : "Bake Non-Driven BlendShapes",
+        "Inspector.SkinnedMesh.BakeBlendShapeResult" : "Baked BlendShapes: {n}",
         "Inspector.SkinnedMesh.VisualizeBoneBounds" : "Visualize bone bounding boxes",
         "Inspector.SkinnedMesh.VisualizeApproximateBoneBounds" : "Visualize approximate merged bone sphere bounds",
         "Inspector.SkinnedMesh.ClearBoundsVisuals" : "Remove bone bounding box visuals",
+
+        "Inspector.SimpleAvatarProtection.RemoveAll" : "Remove All Instances",
+        "Inspector.SimpleAvatarProtection.ConfirmRemoveAll" : "REMOVE Avatar Protection",
 
         "Inspector.BipedRig.GetDiagnosticInfo" : "Get rig diagnostic info",
         "Inspector.BipedRig.GenerateDebugVisuals" : "Generate Debug Visuals",
@@ -1211,22 +1244,22 @@
 
         "Tutorial.Intro.ScalingTitle" : "Scaling",
         "Tutorial.Intro.ScalingVR" : "To <color=#ffdd77><b>Scale</b></color> an object, grab it with both hands and move them <color=#77ddff><b>closer or further</b></color> apart - this can also be done with your lasers.",
-        "Tutorial.Intro.ScalingScreen" : "To <color=#ffdd77><b>Scale</b></color> an object, grab it with <color=#77ff77><b>Right Mouse button</b></color> and <color=#77ddff><b>scroll</b></color> with your <color=#77ff77><b>Scroll Wheel</b></color>.",
+        "Tutorial.Intro.ScalingScreen" : "To <color=#ffdd77><b>Scale</b></color> an object, grab it with <color=#77ff77><b>Right Mouse button</b></color>. While holding down <color=#77ddff><b>Shift</b></color> <color=#77ddff><b>scroll</b></color> with your <color=#77ff77><b>Scroll Wheel</b></color>.",
 
         "Tutorial.Intro.ContextMenuTitle" : "Context Menu",
         "Tutorial.Intro.ContextMenuDescription" : "Your <color=#ffdd77><b>Context Menu</b></color> provides quick actions.<br>Open or close it using the <color=#77ff77><b>{button}</b></color>.",
         "Tutorial.Intro.ContextMenu_ButtonB" : "B button",
         "Tutorial.Intro.ContextMenu_ButtonBY" : "B or Y button",
         "Tutorial.Intro.ContextMenu_ButtonMenu" : "Menu button",
-        "Tutorial.Intro.ContextMenu_Screen" : "R key",
+        "Tutorial.Intro.ContextMenu_Screen" : "Middle Mouse button",
 
         "Tutorial.Intro.DestroyingDuplicatingTitle" : "Destroying and Duplicating",
         "Tutorial.Intro.DestroyingDuplicatingVR" : "While holding an object, <b><color=#ffdd77>Destroy or Duplicate</color></b> it by <color=#77ff77><b>Clicking</b></color> the action in the context menu.",
-        "Tutorial.Intro.DestroyingDuplicatingScreen" : "While holding an object, <b><color=#ffdd77>Destroy</color></b> it by pressing <color=#77ff77><b>Delete</b></color>. <color=#ffdd77><b>Duplicate</b></color> it by pressing <color=#77ff77><b>F key</b></color>.",
+        "Tutorial.Intro.DestroyingDuplicatingScreen" : "While holding an object, <b><color=#ffdd77>Destroy</color></b> it with the action in the <color=#ffdd77><b>Context Menu</b></color> or by pressing the <color=#77ff77><b>Delete</b></color> key. <color=#ffdd77><b>Duplicate</b></color> it with the action in the <color=#ffdd77><b>Context Menu</b></color>.",
 
         "Tutorial.Intro.ScalingYourselfTitle" : "Scaling Yourself",
         "Tutorial.Intro.ScalingYourselfVR" : "To <color=#ffdd77><b>Scale Yourself</b></color>, enable scaling in your context menu, then hold both <color=#77ff77><b>Grip Buttons</b></color> and move your hands <color=#77ddff><b>closer or further</b></color> apart.",
-        "Tutorial.Intro.ScalingYourselfScreen" : "To <color=#ffdd77><b>Scale Yourself</b></color>, hold <color=#77ff77><b>Ctrl</b></color> and <color=#77ddff><b>scroll</b></color> your <color=#77ff77><b>Scroll wheel</b></color>.",
+        "Tutorial.Intro.ScalingYourselfScreen" : "To <color=#ffdd77><b>Scale Yourself</b></color> Open the <color=#ffdd77><b>Context Menu</b></color> and Enable Scaling then hold <color=#77ff77><b>Ctrl</b></color> and <color=#77ddff><b>scroll</b></color> your <color=#77ff77><b>Scroll wheel</b></color>.",
 
         "Tutorial.Intro.LocomotionTitle" : "Locomotion",
         "Tutorial.Intro.LocomotionDescription" : "Neos contains many different methods of movement.<br>These locomotion options are available within your <color=#ffdd77>Context Menu</color>.",
@@ -1237,10 +1270,10 @@
         "Tutorial.Intro.Dashboard_ButtonA" : "A button",
         "Tutorial.Intro.Dashboard_ButtonAX" : "A or X button",
         "Tutorial.Intro.Dashboard_ButtonMenu" : "Menu button",
-        "Tutorial.Intro.Dashboard_ButtonScreen" : "Ctrl + Space key combination",
+        "Tutorial.Intro.Dashboard_ButtonScreen" : "Escape Key",
 
         "Tutorial.Intro.InventoryVR" : "Your <color=#ffdd77><b>Inventory</b></color> is located on your Dashboard.<br>To <color=#77ddff><b>Spawn</b></color> an object, <color=#77ff77><b>Double-Click</b></color> the item in your inventory.<br>To <color=#77ddff><b>Save</b></color> an object, <color=#77ddff><b>hold</b></color> the item and press <sprite name=inv-add> on the top right corner.",
-        "Tutorial.Intro.InventoryScreen" : "Your <color=#ffdd77><b>Inventory</b></color> is located on your Neos Dashboard.<br>To <color=#77ddff><b>spawn</b></color> an object, <color=#77ff77><b>Double-Click</b></color> the item in your inventory.<br>To <color=#77ddff><b>save</b></color> an object, hold the item and press <color=#77ff77><b>Ctrl + S</b></color>.",
+        "Tutorial.Intro.InventoryScreen" : "Your <color=#ffdd77><b>Inventory</b></color> is located on your Neos Dashboard.<br>To <color=#77ddff><b>spawn</b></color> an object, <color=#77ff77><b>Double-Click</b></color> the item in your inventory.<br>To <color=#77ddff><b>save</b></color> an object, hold the item and save through the <color=#ffdd77><b>Context Menu</b></color>.",
 
         "Tutorial.Intro.HomeScreenTitle" : "Your Home Screen",
         "Tutorial.Intro.HomeScreenDescription" : "Your <color=#ffdd77><b>Home Screen</b></color> contains facets with many features.<br>These include the Avatar Creator, Full body Calibrator, Camera/Streaming, and Create New World.",
@@ -1256,10 +1289,10 @@
         "Tutorial.Intro.Website" : "Website",
         "Tutorial.Intro.OutroEnd" : "To support the project, join our Patreon.<br><br>Join the Discord for status updates, networking, or technical support.",
 
-        "Tutorial.MTC.Avatars" : "Avatars & Social",
+        "Tutorial.MTC.Avatars" : "Avatar Lobby",
         "Tutorial.MTC.Creation" : "Creation & Utility",
         "Tutorial.MTC.RecordingStreaming" : "Recording & Streaming",
-
+        
         "Tutorial.Grab.MoveRotate" : "Move/Rotate held items",
         "Tutorial.Grab.Scale" : "Grab with other controller to scale",
         "Tutorial.Grab.PullToEquip" : "Pull towards you to equip",
@@ -1297,6 +1330,259 @@
         "Tutorial.Tooltip.ShapeSecondary" : "Change Shape",
         "Tutorial.Tooltip.WigglerPrimary" : "Unleash Unspoken Evils Upon The World",
         "Tutorial.Tooltip.WigglerSecondary" : "Redeem your soul slightly",
+
+        "Tutorial.BotDesigner.Start" : "Start",
+        "Tutorial.BotDesigner.WearAvatar" : "Wear Avatar",
+        "Tutorial.BotDesigner.Intro.Title" : "Neos Bot Designer",
+        "Tutorial.BotDesigner.Intro.Description" : "Design a customized Neos Bot!",
+        "Tutorial.BotDesigner.List.Models" : "Models",
+        "Tutorial.BotDesigner.List.Colors" : "Colors",
+        "Tutorial.BotDesigner.ModelOptions.Genders.Male" : "Male",
+        "Tutorial.BotDesigner.ModelOptions.Genders.Female" : "Female",
+        "Tutorial.BotDesigner.ModelOptions.Cloak" : "Cloak",
+        "Tutorial.BotDesigner.ColorOptions.Metal" : "Metal",
+        "Tutorial.BotDesigner.ColorOptions.Secondary" : "Secondary",
+        "Tutorial.BotDesigner.ColorOptions.Underbody" : "Underbody",
+        "Tutorial.BotDesigner.ColorOptions.Emission" : "Emission",
+        "Tutorial.BotDesigner.ColorOptions.PickColor" : "Pick Color",
+
+        "Tutorial.AvatarTutorial.Start" : "Start",
+        "Tutorial.AvatarTutorial.OpenWorld" : "Open World",
+        "Tutorial.AvatarTutorial.AvatarWorlds" : "Avatar Worlds",
+        "Tutorial.AvatarTutorial.Intro.Title" : "Neos Avatars",
+        "Tutorial.AvatarTutorial.Intro.Description" : "Learn how to find and use avatars!",
+        "Tutorial.AvatarTutorial.Avatars.Title" : "Avatars",
+        "Tutorial.AvatarTutorial.FindingAvatars.Title" : "Finding Avatars",
+        "Tutorial.AvatarTutorial.EquippingAndFavoriting.Title" : "Equipping & Favoriting",
+        "Tutorial.AvatarTutorial.AvatarCreation.Title" : "Avatar Creation",
+        "Tutorial.AvatarTutorial.AvatarWorlds.Title" : "Avatar Worlds",
+        "Tutorial.AvatarTutorial.AvatarWorlds.Description" : "Select an avatar world you want to go to and click <color=#77ff77>Open World</color>.",
+        "Tutorial.AvatarTutorial.Avatars.Description" : "Avatars are a way to express yourself.<br>You can find or create avatars within the metaverse.",
+        "Tutorial.AvatarTutorial.FindingAvatars.Description" : "Common avatars are located in the<br>Neos Essentials folder in your inventory.<br><br>Community-made avatars can be found in public folders or published worlds.",
+        "Tutorial.AvatarTutorial.EquippingAndFavoriting.Description" : "Once you have an avatar, equip it by clicking<br>on it and choosing Equip Avatar.<br><br>Save your currently equipped avatar by clicking <sprite name=Download>  .<br><br>You can favorite your avatar by selecting it in your<br>inventory and clicking <sprite name=Favorite>  .",
+        "Tutorial.AvatarTutorial.AvatarCreation.Description" : "To import and setup a custom avatar, refer to<br>the Neos Avatar Creation tutorial.",
+
+        "Tutorial.Intro.PublicFolders.Title" : "Public Folders",
+        "Tutorial.Intro.PublicFolders.Description" : "Public Folders are an easy way for users in the Community to share and update their Creations like Avatars.<br><br>To save, grab the folder, then while holding press <sprite name=Add>  in your Inventory.<br><br>You can also save with your Context Menu.<br><br>Try it with <b>The Starter Pack</b>. A folder designed for new users.",
+
+        "Tutorial.AvatarCreator.Intro.Title" : "Neos Avatar Creation",
+        "Tutorial.AvatarCreator.Intro.Description" : "Learn how to import your avatar and set it up!",
+        "Tutorial.AvatarCreator.Options.Start" : "Start",
+        "Tutorial.AvatarCreator.ImportingAssets.Title" : "Importing Assets",
+        "Tutorial.AvatarCreator.AvatarCreator.Title" : "Avatar Creator",
+        "Tutorial.AvatarCreator.SettingUpMaterials.Title" : "Setting Up Materials",
+        "Tutorial.AvatarCreator.DynamicBones.Title" : "Dynamic Bones",
+        "Tutorial.AvatarCreator.Saving&Favoriting.Title" : "Saving & Favoriting",
+        "Tutorial.AvatarCreator.ImportingAssets.Description" : "Custom avatar assets, including the model, textures, normal maps, and more can all be imported directly from the in-app file browser, or by dragging and dropping the files onto the Neos window from your desktop.",
+        "Tutorial.AvatarCreator.AvatarCreator.Description" : "After importing the model, open the <color=#77ccff><b>Avatar Creator</b></color> on the dashboard and place the head, hands, and tool anchors as prefered.",
+        "Tutorial.AvatarCreator.SettingUpMaterials.Description" : "Using the <color=#77ccff><b>Developer Tooltip</b></color> <sprite name=DevTip>  press <color=#77ff77><b>Secondary</b></color> to select<br>the avatar and open its hierarchy.<br>Navigate to the avatar's root, and with the <color=#77ccff><b>Material Tooltip</b></color> <sprite name=MatTip>   equipped, <color=#77ff77><b>Grab</b></color> the CenteredRoot slot and press <color=#77ff77><b>Secondary</b></color> to extract the avatar's materials.<br>Textures and maps that haven't imported directly on the avatar can be added by editing the material, gripping the texture, and clicking on the target field.",
+        "Tutorial.AvatarCreator.DynamicBones.Description" : "Dynamic bones can add life and interactivity to an otherwise static rig.<br>Add the DynamicBoneChain component to the start of the target bone chain, scroll to the bottom and click <color=#77ccff><b>Setup from Children (Rig Only)</b></color>. This creates a default dynamic bone chain. You can edit its properties using the inspector.",
+        "Tutorial.AvatarCreator.SavingFavoriting.Description" : "After you have finished the initial setup, equip the avatar and navigate to a folder created in your inventory you wish to save it to, then press <sprite name=Download>  .<br><br>Click on your avatar in the inventory to select it, and press <sprite name=Favorite>  to set it as the favorite avatar.",
+        "Tutorial.AvatarCreator.Outro.Title" : "More Information & Help",
+        "Tutorial.AvatarCreator.Outro.Button.Wiki" : "Wiki",
+        "Tutorial.AvatarCreator.Outro.Description" : "Additional resources for avatar creation, set-up, and other tutorial content can be found on the community-run wiki, the Neos Discord, and on YouTube.",
+
+        "Tutorial.CommunityYouTube.Title" : "Community YouTube Channels",
+
+        "Tutorial.UserResources.UserResourcesTitle" : "User Resources",
+        "Tutorial.UserResources.SupportTitle" : "How to support Neos",
+        "Tutorial.UserResources.MerchandiseTitle" : "Neos Merch",
+
+        "Tutorial.Intro.BadgesNeosTeam" : "Neos Team",
+        "Tutorial.Intro.BadgesModerator" : "Moderator",
+        "Tutorial.Intro.BadgesMentor" : "Mentor",
+        "Tutorial.Intro.BadgesDisabilityHearing" : "Hearing Impaired",
+        "Tutorial.Intro.BadgesDisabilityVision" : "Vision Impaired",
+        "Tutorial.Intro.BadgesDisabilitySpeech" : "Speech Impaired",
+        "Tutorial.Intro.BadgesTitle" : "Badges",
+        "Tutorial.Intro.BadgesDescription" : "Badges are small icons which show aspects of a user. Here are a few important badges to remember. The disability badges can be self assigned though the Neos bot. For more information please check the Neos Wiki",
+        "Tutorial.Intro.HelpSite" : "Help",
+
+        "Object.Mirror.Toggle" : "Local Toggle",
+
+        "Tutorial.Streaming.StageControl" : "Stage Control",
+        "Tutorial.Streaming.StageUI" : "Toggle Stage UI",
+        "Tutorial.Streaming.StageLights" : "Toggle Stage Lights",
+        "Tutorial.Streaming.StageLightController" : "Toggle Light Controller",
+        "Tutorial.Streaming.StageMicrophone" : "Toggle Microphone Stand",
+
+        "Tutorial.Streaming.GreenScreenControl" : "Green Screen Control",
+        "Tutorial.Streaming.GreenScreenToggle360" : "Toggle 360<sup>o</sup> Scene",
+        "Tutorial.Streaming.GreenScreenTracking" : "Toggle Tracking References",
+        "Tutorial.Streaming.GreenScreenMarker" : "Create Grabbable Marker",
+        "Tutorial.Streaming.GreenScreenCycleScene" : "Cycle Scene",
+
+        "Tutorial.Streaming.StreamRoomControl" : "Streaming Room Control",
+        "Tutorial.Streaming.StreamRoomSkyWall" : "Sky Wall Image",
+        "Tutorial.Streaming.StreamRoomLayout" : "Set Layout",
+
+        "Tutorial.Streaming.StageLightShadowToggle" : "Toggle Light Shadows",
+
+        "Tutorial.Streaming.Microphone.Title" : "Microphone Tool",
+        "Tutorial.Streaming.Microphone.UsageDescription" : "Once the <b><color=#ffdd77>MICROPHONE TIP</b></color> is equipped audio can be recorded by holding the <b><color=#77ff77>PRIMARY</b></color> button.",
+        "Tutorial.Streaming.Microphone.AudioTypeDescription" : "Select the <b><color=#ffdd77>AUDIO FILE TYPE</b></color> you want to use by opening the <b><color=#dd77ff>CONTEXT MENU</b></color> on the tools equiped hand.",
+        "Tutorial.Streaming.Microphone.RecordingDescription" : "You can change the <b><color=#ffdd77>RECORDING</b></color> method using the options in the <b><color=#dd77ff>CONTEXT MENU</b></color>.",
+        "Tutorial.Streaming.Microphone.RawDescription" : "The <b><color=#ffdd77>AUDIO OUTPUT</b></color> method can be changed to <b><color=#ffdd77>RAW AUDIO</b></color> format in the <b><color=#dd77ff>CONTEXT MENU</b></color>.",
+
+        "Tutorial.Streaming.AudioStreaming.Title" : "Audio Streaming",
+        "Tutorial.Streaming.AudioStreaming.StreamAudioDescription" : "Desktop audio can be streamed into Neos for others to hear. To stream audio, click <b><color=#ffdd77>STREAM AUDIO</b></color> button on your dashboard homepage.",
+        "Tutorial.Streaming.AudioStreaming.StartStreamingDescription" : "Choose a device you would like to stream from the <b><color=#ffdd77>AUDIO INPUT</b></color> list. The input chosen can be previewed in this panel before you begin streaming. Click <b><color=#77ff77>START STREAMING</b></color> to open an audio streaming panel.",
+        "Tutorial.Streaming.AudioStreaming.StopStreamingDescription" : "The <b><color=#ffdd77>AUDIO STREAMING PANEL</b></color> allows others in the session to hear audio from your computer. Closing the panel <b><color=red>STOPS</b></color> the stream.",
+
+        "Tutorial.Streaming.StreamControl.SkyboxTexture" : "Place Skybox Texture Here",
+
+        "Tutorial.Streaming.Twitch.TwitchChat" : "Twitch Chat",
+
+        "Tutorial.Streaming.Camera.BasicFunctions.Page1.Title" : "The Camera",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page2.Title" : "Taking a Photo",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page3.Title" : "UI Zoom Control",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page4.Title" : "Physical Zoom Control",
+
+        "Tutorial.Streaming.Camera.Resolution.Page1.Title" : "Changing Resolution",
+
+        "Tutorial.Streaming.Camera.Resolution.Page1.Description" : "Under <sprite name=2K> you can find multiple options to change the <color=#ffdd77><b>RESOLUTION</b></color> of the images the <color=#ffdd77><b>CAMERA</b></color> takes.",
+
+        "Tutorial.Streaming.Camera.Mode.Page1.Title" : "Standard Photo",
+        "Tutorial.Streaming.Camera.Mode.Page2.Title" : "3D Photo",
+        "Tutorial.Streaming.Camera.Mode.Page3.Title" : "360 Photo",
+        "Tutorial.Streaming.Camera.Mode.Page4.Title" : "Transparent Photo",
+
+        "Tutorial.Streaming.Camera.ImageFilters.Page1.Title" : "Default",
+        "Tutorial.Streaming.Camera.ImageFilters.Page2.Title" : "Saturated",
+        "Tutorial.Streaming.Camera.ImageFilters.Page3.Title" : "Greyscale",
+        "Tutorial.Streaming.Camera.ImageFilters.Page4.Title" : "Sepia",
+        "Tutorial.Streaming.Camera.ImageFilters.Page5.Title" : "Rainbow",
+
+        "Tutorial.Streaming.Camera.OptionsPlus.Page1.Title" : "Frustum",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page2.Title" : "Timer",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page3.Title" : "Reflections",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page4.Title" : "Flash",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page5.Title" : "Big Screen",
+
+        "Tutorial.Streaming.Camera.ExcludeTip.Page1.Title" : "Where To Find",
+        "Tutorial.Streaming.Camera.ExcludeTip.Page2.Title" : "How to use",
+
+        "Tutorial.Streaming.Camera.BasicFunctions.Title" : "Basic Functions",
+
+        "Tutorial.Streaming.Camera.BasicFunctions.Page1.Description" : "You can <color=#77ff77><b>SPAWN</b></color> a <color=#ffdd77><b>CAMERA</b></color> from the <color=#dd77ff><b>NEOS ESSENTIALS FOLDER</b></color> within your <color=#dd77ff><b>INVENTORY</b></color>. This is your main tool for <color=#77ff77><b>CAPTURING</b></color> images in Neos.",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page2.Description" : "You can <color=#77ff77><b>CAPTURE</b></color> images using your <color=#77ff77><b>PRIMARY</b></color> on the <color=#ffdd77><b>BUTTON</b></color> on top of the <color=#ffdd77><b>CAMERA</b></color> or by <color=#77ff77><b>GRABBING</b></color> it anywhere on the<color=#dd77ff><b> CAMERA BODY</b></color> and using your <color=#77ff77><b>PRIMARY</b></color>.",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page3.Description" : "The <color=#ffdd77><b>ZOOM</b></color> function can be found under <sprite name=Options>. You can interact with the <color=#ffdd77><b>ZOOM SLIDER</b></color> using <color=#77ff77><b>PHYSICAL INTERACTION</b></color> or by using your <color=#dd77ff><b>LASERS</b></color> and <color=#77ff77><b>PRIMARY</b></color>. ",
+        "Tutorial.Streaming.Camera.BasicFunctions.Page4.Description" : "You can also control the <color=#ffdd77><b>ZOOM</b></color> amount by <color=#77ff77><b>GRABBING</b></color> the <color=#dd77ff><b>CAMERA LENS</b></color> with your free hand and <color=#77ff77><b>TWISTING</b></color> the <color=#dd77ff><b>CAMERA LENS</b></color> in a physical motion.",
+
+        "Tutorial.Streaming.Camera.Mode.Page1.Description" : "<color=#ffdd77><b>BASIC SETTINGS</b></color> can be found under <sprite name=Camera> By default the <color=#ffdd77><b>CAMERA</b></color> is set to <color=#ffdd77><b>STANDARD PHOTO</b></color>, which is the most commonly used <color=#ffdd77><b>CAMERA</b></color> setting to <color=#77ff77><b>CAPTURE</b></color> images. ",
+        "Tutorial.Streaming.Camera.Mode.Page2.Description" : "The <color=#ffdd77><b>3D PHOTO</b></color> setting allows you to <color=#77ff77><b>CAPTURE</b></color> images that have an illusion of depth to them, which is achieved by creating a stereoscopic image. Note that this effect is only viewable with a headset and that the <color=#dd77ff><b>SCREENSHOT</b></color> saved will appear as two images combined side by side in a single file.",
+        "Tutorial.Streaming.Camera.Mode.Page3.Description" : "The <color=#ffdd77><b>360 PHOTO</b></color> setting allows the <color=#77ff77><b>CAPTURE</b></color> of <color=#dd77ff><b>EQUIRECTANGULAR 360 IMAGES</b></color> that can be used in a <color=#dd77ff><b>PROJECTION360 MATERIAL</b></color>, for use as a <color=#dd77ff><b>SKYBOX</b></color>.",
+        "Tutorial.Streaming.Camera.Mode.Page4.Description" : "The <color=#ffdd77><b>CUTOUT PHOTO</b></color> setting allows the <color=#77ff77><b>CAPTURE</b></color> of a <color=#dd77ff><b>CUTOUT IMAGE</b></color>. The <color=#ffdd77><b>CAMERA</b></color> projects a <color=#dd77ff><b>LASER</b></color> from the front that renders only the <color=#dd77ff><b>OBJECT</b></color> it intersects with onto a transparent background, which is spawned as a <color=#dd77ff><b>SAVEABLE ITEM</b></color> and <color=#dd77ff><b>SCREENSHOT</b></color>.",
+
+        "Tutorial.Streaming.Camera.ImageFilters.Page1.Description" : "<color=#ffdd77><b>CAMERA FILTERS</b></color> can be found under <sprite name=NoFilter>. As standard, the <color=#ffdd77><b>CAMERA</b></color> is set to the <color=#ffdd77><b>DEFAULT</b></color> filter.",
+        "Tutorial.Streaming.Camera.ImageFilters.Page2.Description" : "The <color=#ffdd77><b>SATURATED</b></color> filter increases the saturation level of colors along with increasing the contrast of light and dark values.",
+        "Tutorial.Streaming.Camera.ImageFilters.Page3.Description" : "The <color=#ffdd77><b>GREYSCALE</b></color> filter removes all saturation from colors.",
+        "Tutorial.Streaming.Camera.ImageFilters.Page4.Description" : "The <color=#ffdd77><b>SEPIA</b></color> filter removes all saturation from colors and hue shifts them to emulate the look of tintype photographs.",
+        "Tutorial.Streaming.Camera.ImageFilters.Page5.Description" : "The <color=#ffdd77><b>RAINBOW</b></color> filter can be used to add some color to your photos.",
+
+        "Tutorial.Streaming.Camera.OptionsPlus.Page1.Description" : "<color=#ffdd77><b>ADVANCED SETTINGS</b></color> can be found under <sprite name=OptionsPlus>. By default none of these are active. <color=#ffdd77><b>FRUSTUM</b></color> is the first in the column, it creates a <color=#dd77ff><b>VISUAL</b></color> which is the area that will be shown in the <color=#dd77ff><b>PREVIEW SCREEN</b></color> of the <color=#ffdd77><b>CAMERA</b></color>.",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page2.Description" : "The <color=#ffdd77><b>TIMER</b></color> option can be <color=#77ff77><b>ACTIVATED</b></color> with <sprite name=Timer>. It creates a 10 second countdown timer which starts when you <color=#77ff77><b>CAPTURE</b></color> an image by using your <color=#77ff77><b>PRIMARY</b></color> on the <color=#dd77ff><b>BUTTON</b></color> on top of the <color=#ffdd77><b>CAMERA</b></color>, or while <color=#77ff77><b>GRABBING</b></color> the <color=#dd77ff><b>CAMERA BODY</b></color> and pressing <color=#77ff77><b>PRIMARY</b></color>.",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page3.Description" : "The <color=#ffdd77><b>SCREENSPACE REFLECTIONS</b></color> option enables reflections based off of the viewport of the <color=#ffdd77><b>CAMERA</b></color>.",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page4.Description" : "The <color=#ffdd77><b>FLASH</b></color> option can be <color=#77ff77><b>ACTIVATED</b></color> with <sprite name=Lightning>. This <color=#77ff77><b>EXTENDS</b></color> a <color=#dd77ff><b>LIGHT</b></color> out of top of the <color=#dd77ff><b>CAMERA BODY</b></color> that <color=#77ff77><b>ILLUMINATES</b></color> the <color=#dd77ff><b>SCENE</b></color>. ",
+        "Tutorial.Streaming.Camera.OptionsPlus.Page5.Description" : "The <color=#ffdd77><b>BIG SCREEN</b></color> option can be <color=#77ff77><b>ACTIVATED</b></color> with <sprite name=BigScreen>. It creates a larger <color=#dd77ff><b>PREVIEW SCREEN</b></color> above the <color=#dd77ff><b>CAMERA BODY</b></color>. It can also be activated by using your <color=#77ff77><b>PRIMARY</b></color> or <color=#77ff77><b>PHYSICAL TOUCH</b></color> on the center top <color=#dd77ff><b>BUTTON</b></color> of the <color=#dd77ff><b>CAMERA BODY</b></color>.",
+
+        "Tutorial.Streaming.Camera.ExcludeTip.Page1.Description" : "The <b><color=#ffdd77>CAMERA OBJECT EXCLUDE TIP</color></b> can be located in your <b><color=#77ddff>INVENTORY</b></color> under <b><color=#77ddff>ESSENTIAL TOOLS --> MISC</Color></b>. ",
+        "Tutorial.Streaming.Camera.ExcludeTip.Page2.Description" : "Once the tool is equipped <b><color=#77ff77>AIM</b></color> at the object you wish to exclude from the cameras view and press <b><color=#77ff77>SECONDARY</b></color>.<b><color=#77ff77> PRIMARY</b></color> to revert the change.",
+
+        "Tutorial.Streaming.Camera.Resolution.Title" : "Resolution",
+        "Tutorial.Streaming.Camera.Mode.Title" : "Mode",
+        "Tutorial.Streaming.Camera.ImageFilters.Title" : "Image Filters",
+        "Tutorial.Streaming.Camera.OptionsPlus.Title" : "Options+",
+        "Tutorial.Streaming.Camera.ExcludeTip.Title" : "Camera Object Exclude Tip",
+        "Tutorial.Streaming.Camera.Intro.Title" : "Physical Camera Tutorial",
+
+        "Tutorial.Streaming.Camera.Intro.Description" : "Learn all the functions of the physical camera",
+
+        "Tutorial.Streaming.LightTip.Intro.Title" : "Light Tip Tutorial",
+        "Tutorial.Streaming.LightTip.Intro.Description" : "Learn all the functions of the light tip",
+
+        "Tutorial.Streaming.LightTip.Titles.BasicUsage" : "Basic Usage",
+        "Tutorial.Streaming.LightTip.Titles.TypesOfLights" : "Types of Lights",
+        "Tutorial.Streaming.LightTip.Titles.TypesOfShadows" : "Types of Shadows",
+        "Tutorial.Streaming.LightTip.Titles.ChangingColor" : "Changing Color",
+
+        "Tutorial.Streaming.LightTip.BasicUsage.Page1.Title" : "The Light Tip",
+        "Tutorial.Streaming.LightTip.BasicUsage.Page2.Title" : "Creating a Light",
+
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page1.Title" : "Point",
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page2.Title" : "Spot",
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page3.Title" : "Sun/Directional",
+
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page1.Title" : "No Shadows",
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page2.Title" : "Hard Shadows",
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page3.Title" : "Soft Shadows",
+
+        "Tutorial.Streaming.LightTip.ChangingColor.Page1.Title" : "Select Color Panel",
+
+        "Tutorial.Streaming.LightTip.BasicUsage.Page1.Description" : "You can <color=#77ff77><b>SPAWN</b></color> a <color=#ffdd77><b>LIGHT TIP</b></color> from the <color=#dd77ff><b>NEOS ESSENTIALS</b></color> folder within your <color=#dd77ff><b>INVENTORY</b></color>. This is your main tool for <color=#77ff77><b>ADDING LIGHTS</b></color> to worlds in Neos.",
+        "Tutorial.Streaming.LightTip.BasicUsage.Page2.Description" : "By default the <color=#ffdd77><b>LIGHT TIP</b></color> creates a <color=#dd77ff><b>POINT LIGHT</b></color> when <color=#77ff77><b>PRIMARY</b></color> is used. When <color=#77ff77><b>PRIMARY</b></color> is held and dragged, the <color=#dd77ff><b>BRIGHTNESS</b></color> of the light is affected based on the <color=#dd77ff><b>DISTANCE</b></color> the hand is <color=#77ff77><b>DRAGGED</b></color>.",
+
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page1.Description" : "The <color=#ffdd77><b>POINT LIGHT</b></color> creates a light that <color=#77ff77><b>ILLUMINATES</b></color> every direction from a single point with <color=#dd77ff><b>INTENSITY FALLOFF</b></color>.",
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page2.Description" : "The <color=#ffdd77><b>SPOT LIGHT</b></color> creates a light that <color=#77ff77><b>ILLUMINATES</b></color> in one direction as a cone from a single point with <color=#dd77ff><b>INTENSITY FALLOFF</b></color>.",
+        "Tutorial.Streaming.LightTip.TypesOfLights.Page3.Description" : "The <color=#ffdd77><b>DIRECTIONAL LIGHT</b></color> creates a light that <color=#77ff77><b>ILLUMINATES</b></color> the world in one direction with no <color=#dd77ff><b>INTENSITY FALLOFF</b></color>.",
+
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page1.Description" : "<b><color=#77ff77>OBJECTS</b></color> will <b><color=red>NOT</b></color> cast shadows at all",
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page2.Description" : "<b><color=#77ff77>OBJECTS</b></color> will cast shadows with hard edges.",
+        "Tutorial.Streaming.LightTip.TypesOfShadows.Page3.Description" : "<b><color=#77ff77>OBJECTS</b></color> will cast shadows with soft edges.",
+
+        "Tutorial.Streaming.LightTip.ChangingColor.Page1.Description" : "You can change the <b><color=#ffdd77>COLOR</b></color> of the <b><color=#ffdd77>LIGHT</b></color> using the <b><color=#77ff77>CHANGE COLOR</b></color> option in the <b><color=#77ff77>CONTEXT MENU</b></color>.",
+
+        "Tutorial.Streaming.StreamCamera.CameraControl.Title" : "The Camera Control",
+        "Tutorial.Streaming.StreamCamera.Overview.Title" : "Camera Control Overview",
+        "Tutorial.Streaming.StreamCamera.ControlMovement.Title" : "Camera Control Movement",
+        "Tutorial.Streaming.StreamCamera.Zoom.Title" : "Zoom Control",
+        "Tutorial.Streaming.StreamCamera.SmoothPOV.Title" : "Smooth POV",
+        "Tutorial.Streaming.StreamCamera.ThirdPerson.Title" : "Third Person",
+        "Tutorial.Streaming.StreamCamera.Group.Title" : "Group",
+        "Tutorial.Streaming.StreamCamera.World.Title" : "World",
+        "Tutorial.Streaming.StreamCamera.Manual.Title" : "Manual",
+        "Tutorial.Streaming.StreamCamera.Mirror.Title" : "Mirror To Display",
+
+        "Tutorial.Streaming.StreamCamera.CameraAnchors.Page1.Description" : "To<b> <color=#77ff77>SPAWN</color></b> a <b><color=#ffdd77>CAMERA ANCHOR</b></color> press the <b><color=#77ddff>CREATE CAMERA ANCHOR</b></color> button on the left of your UI. Once created you can snap your camera to it by selecting it with <b><color=#77ff77>PRIMARY</b></color>.",
+
+        "Tutorial.Streaming.StreamCamera.Photo.Title" : "Photo",
+        "Tutorial.Streaming.StreamCamera.360.Title" : "360 Photo",
+        "Tutorial.Streaming.StreamCamera.Users.Title" : "Users",
+        "Tutorial.Streaming.StreamCamera.CameraOptions.Title" : "Camera Options",
+        "Tutorial.Streaming.StreamCamera.Anchor.Title" : "Spawning An Anchor",
+        "Tutorial.Streaming.StreamCamera.ExtraCameraControls.Title" : "Extra Camera Controls",
+        "Tutorial.Streaming.StreamCamera.MotionSettings.Title" : "Camera Motion Settings",
+        "Tutorial.Streaming.StreamCamera.AnchorSettings.Title" : "Camera Anchor Settings",
+        "Tutorial.Streaming.StreamCamera.OBS.Title" : "OBS Connection",
+        "Tutorial.Streaming.StreamCamera.Twitch.Title" :" Twitch Connection",
+
+        "Tutorial.Streaming.StreamCamera.BasicFunctions.Page1.Description" : "You can <color=#77ff77><b>SPAWN</b></color> a <b><color=#ffdd77>CAMERA CONTROL PANEL</b></color> from the <b><color=#ffdd77>NEOS DASHBOARD</b></color> on the home tab under a facet called Camera/Streaming. This is your main tool for streaming content from Neos.",
+        "Tutorial.Streaming.StreamCamera.BasicFunctions.Page2.Description" : "The <b><color=#ffdd77>CAMERA CONTROL PANEL</b></color> has many different functions that can be used to improve the quality of your streams/video recording. These functions include camera movement, modes, anchors, settings, Twitch chat and more.",
+        "Tutorial.Streaming.StreamCamera.BasicFunctions.Page3.Description" : "The <b><color=#ffdd77>CAMERA CONTROL PANEL</b></color> movement function can be located at the top left corner of the preview screen. Using this you will be able to adjust the cameras view and position. Additionally you can click the Reset button to reset the position of the camera.",
+        "Tutorial.Streaming.StreamCamera.BasicFunctions.Page4.Description" : "To control the <color=#ffdd77><b>ZOOM</b></color>, use <b><color=#77ff77>PRIMARY</b></color> on the grey bar at the bottom of the preview screen and move the slider left or right.",
+
+        "Tutorial.Streaming.StreamCamera.Modes.Page1.Description" : "<b><color=#ffdd77>SMOOTH POV</b></color> set the camera to your first person view and smooths any movement.",
+        "Tutorial.Streaming.StreamCamera.Modes.Page2.Description" : "<b><color=#ffdd77>THIRD PERSON</b></color> mode allows you to view yourself from an outside perspecive. You can adjust the cameras position using the camera movement controls on the preview screen.",
+        "Tutorial.Streaming.StreamCamera.Modes.Page3.Description" : "<b><color=#ffdd77>GROUP</b></color> mode automatically adjusts its view to keep nearby users in view.",
+        "Tutorial.Streaming.StreamCamera.Modes.Page4.Description" : "<b><color=#ffdd77>WORLD</b></color> mode keeps the camera stationary and tracks the user.",
+        "Tutorial.Streaming.StreamCamera.Modes.Page5.Description" : "<b><color=#ffdd77>MANUAL</b></color> mode allows you to use the streaming camera like the physical camera.",
+
+        "Tutorial.Streaming.StreamCamera.Functions.Page1.Description" : "<b><color=#ffdd77>MIRROR TO DISPLAY</b></color> changes your desktop from your vr headset to the streaming camera view, this option should be used if streaming or recording.",
+        "Tutorial.Streaming.StreamCamera.Functions.Page2.Description" : "<b><color=#ffdd77>PHOTO</b></color> takes a picture of the cameras current view. These photos get saved to your screenshot library.",
+        "Tutorial.Streaming.StreamCamera.Functions.Page3.Description" : "<b><color=#ffdd77>360 PHOTO</b></color> takes a 360 picture of the scene from the cameras current position. These photos get saved to your screenshot library.",
+        "Tutorial.Streaming.StreamCamera.Functions.Page4.Description" : "<b><color=#ffdd77>USERS</b></color> allows you to change the cameras view to another users perspecive as well as modify the volume and camera permissions for each person.",
+
+        "Tutorial.Streaming.StreamCamera.Intro.Title" : "Streaming Camera Tutorial",
+        "Tutorial.Streaming.StreamCamera.Intro.Description" : "Learn all the functions of the streaming camera",
+
+        "Tutorial.Streaming.StreamCamera.Options.Page1.Description" : "<b><color=#ffdd77>CONTROL OPTIONS</b></color> can be found on the far left of the UI, here you can change settings similar to the physical camera as well as nameplate rendering and more.",
+
+        "Tutorial.Streaming.StreamCamera.Features.Page1.Description" : "Extra camera control options can be found on the far right of the UI by pressing the <b><color=#77ddff>GEAR</b></color> icon on the top right of the preview screen. Here you can change render settings, user control, and follow distances.",
+        "Tutorial.Streaming.StreamCamera.Features.Page2.Description" : "The <b><color=#77ddff>ARROW</b></color> icon opens a panel to control the cameras motion. This can include position, angle, and FOV of the camera for the different preset viewpoints.",
+        "Tutorial.Streaming.StreamCamera.Features.Page3.Description" : "The <b><color=#77ddff>WAYPOINT</b></color> icon opens a panel to control different camera anchors. This is useful for changing to different anchors set in the world as well as the speed of interpolation.",
+        "Tutorial.Streaming.StreamCamera.Features.Page4.Description" : "The <b><color=#77ddff>OBS</b></color> icon opens a panel to connect to OBS. This can allow you to quickly start recording using OBS.",
+        "Tutorial.Streaming.StreamCamera.Features.Page5.Description" : "The <b><color=#77ddff>TWITCH</b></color> icon allows you to see your Twitch chat. You can link your channel by typing the channels name in the top left bar.",
+
 
         "Exiting.SavingItems" : "Saving {n, plural, one {# item} other {# items}}...",
         "Exiting.SavingChanges" : "Saving Changes...",
